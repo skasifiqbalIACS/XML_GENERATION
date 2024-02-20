@@ -1,8 +1,7 @@
 #include "WarehouseAutomationPlantUMLGenerator.hpp"
 
-void WarehouseAutomationPlantUMLGenerator::generatePlantUML(const std::map<int, SpecialLocationType>& specialLocations,
-                                                            int rowSize, int colSize,
-                                                            const std::string& filename) {
+void WarehouseAutomationPlantUMLGenerator::generatePlantUML(const std::map<int, SpecialLocationType> &specialLocations, int rowSize, int colSize, const std::string &filename)
+{
     std::string outputDir = "generated_models";
     std::string fullPumlPath = outputDir + "/" + filename;
     

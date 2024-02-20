@@ -1,0 +1,118 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/tinyxml2-master/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 106,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "tinyxml2_development",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/tinyxml2-master/libtinyxml2.a"
+			],
+			"targetId" : "tinyxml2::@e66f90438da7485c495e",
+			"targetIndex" : 29,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "tinyxml2_development",
+			"destination" : "lib/cmake/tinyxml2",
+			"exportName" : "tinyxml2-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "tinyxml2::@e66f90438da7485c495e",
+					"index" : 29
+				}
+			],
+			"paths" : 
+			[
+				"lib/tinyxml2-master/CMakeFiles/Export/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "tinyxml2_development",
+			"destination" : "lib/cmake/tinyxml2",
+			"paths" : 
+			[
+				"lib/tinyxml2-master/cmake/tinyxml2-config.cmake",
+				"build/lib/tinyxml2-master/tinyxml2-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "tinyxml2_development",
+			"destination" : "include",
+			"paths" : 
+			[
+				"lib/tinyxml2-master/tinyxml2.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tinyxml2_development",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/lib/tinyxml2-master/tinyxml2.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/tinyxml2-master",
+		"source" : "lib/tinyxml2-master"
+	}
+}

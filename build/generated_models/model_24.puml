@@ -1,0 +1,83 @@
+@startuml model_24.puml
+skinparam state {
+  BackgroundColor<<normal>> White
+  BackgroundColor<<barrier>> Red
+  BackgroundColor<<oil_spill>> Yellow
+  BackgroundColor<<charging>> Green
+}
+
+state "l1 <<oil_spill>" as loc1:Inv: 0<=x1<=1\n 0<=x2<=1, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-2
+state "l2 <<blocked>>" as loc2:Inv: x1==0 \n x2==0, c>=0.1\nFlow: x1'==0 \n x2'==0, c'==-1
+state "l3 <<normal>>" as loc3:Inv: 2<=x1<=3\n 0<=x2<=1, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l4 <<normal>>" as loc4:Inv: 3<=x1<=4\n 0<=x2<=1, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l5 <<oil_spill>" as loc5:Inv: 0<=x1<=1\n 1<=x2<=2, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-2
+state "l6 <<normal>>" as loc6:Inv: 1<=x1<=2\n 1<=x2<=2, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l7 <<normal>>" as loc7:Inv: 2<=x1<=3\n 1<=x2<=2, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l8 <<blocked>>" as loc8:Inv: x1==0 \n x2==0, c>=0.1\nFlow: x1'==0 \n x2'==0, c'==-1
+state "l9 <<normal>>" as loc9:Inv: 0<=x1<=1\n 2<=x2<=3, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l10 <<normal>>" as loc10:Inv: 1<=x1<=2\n 2<=x2<=3, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l11 <<normal>>" as loc11:Inv: 2<=x1<=3\n 2<=x2<=3, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l12 <<normal>>" as loc12:Inv: 3<=x1<=4\n 2<=x2<=3, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l13 <<blocked>>" as loc13:Inv: x1==0 \n x2==0, c>=0.1\nFlow: x1'==0 \n x2'==0, c'==-1
+state "l14 <<normal>>" as loc14:Inv: 1<=x1<=2\n 3<=x2<=4, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l15 <<normal>>" as loc15:Inv: 2<=x1<=3\n 3<=x2<=4, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l16 <<normal>>" as loc16:Inv: 3<=x1<=4\n 3<=x2<=4, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l17 <<charging>>" as loc17:Inv: 0<=x1<=1\n 4<=x2<=5, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==0
+state "l18 <<normal>>" as loc18:Inv: 1<=x1<=2\n 4<=x2<=5, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l19 <<normal>>" as loc19:Inv: 2<=x1<=3\n 4<=x2<=5, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+state "l20 <<normal>>" as loc20:Inv: 3<=x1<=4\n 4<=x2<=5, c>=0.1\nFlow: -1<=x1'<=1 \n -1<=x2'<=1, c'==-1
+
+loc1-right[#white]->loc2
+loc1 -up-> loc5: e1\n0<=x1<1, x2==1
+loc5 -down-> loc1: e2\n0<=x1<1, x2==1
+loc2-right[#white]->loc3
+loc2-up[#white]->loc6
+loc3 -right-> loc4: e3\n x1 ==3,0<=x2<1
+loc4 -left-> loc3: e4\n x1 ==3,0<=x2<1
+loc3 -up-> loc7: e5\n2<=x1<3, x2==1
+loc7 -down-> loc3: e6\n2<=x1<3, x2==1
+loc4-up[#white]->loc8
+loc5 -right-> loc6: e7\n x1 ==1,1<=x2<2
+loc6 -left-> loc5: e8\n x1 ==1,1<=x2<2
+loc5 -up-> loc9: e9\n0<=x1<1, x2==2
+loc9 -down-> loc5: e10\n0<=x1<1, x2==2
+loc6 -right-> loc7: e11\n x1 ==2,1<=x2<2
+loc7 -left-> loc6: e12\n x1 ==2,1<=x2<2
+loc6 -up-> loc10: e13\n1<=x1<2, x2==2
+loc10 -down-> loc6: e14\n1<=x1<2, x2==2
+loc7-right[#white]->loc8
+loc7 -up-> loc11: e15\n2<=x1<3, x2==2
+loc11 -down-> loc7: e16\n2<=x1<3, x2==2
+loc8-up[#white]->loc12
+loc9 -right-> loc10: e17\n x1 ==1,2<=x2<3
+loc10 -left-> loc9: e18\n x1 ==1,2<=x2<3
+loc9-up[#white]->loc13
+loc10 -right-> loc11: e19\n x1 ==2,2<=x2<3
+loc11 -left-> loc10: e20\n x1 ==2,2<=x2<3
+loc10 -up-> loc14: e21\n1<=x1<2, x2==3
+loc14 -down-> loc10: e22\n1<=x1<2, x2==3
+loc11 -right-> loc12: e23\n x1 ==3,2<=x2<3
+loc12 -left-> loc11: e24\n x1 ==3,2<=x2<3
+loc11 -up-> loc15: e25\n2<=x1<3, x2==3
+loc15 -down-> loc11: e26\n2<=x1<3, x2==3
+loc12 -up-> loc16: e27\n3<=x1<4, x2==3
+loc16 -down-> loc12: e28\n3<=x1<4, x2==3
+loc13-right[#white]->loc14
+loc13-up[#white]->loc17
+loc14 -right-> loc15: e29\n x1 ==2,3<=x2<4
+loc15 -left-> loc14: e30\n x1 ==2,3<=x2<4
+loc14 -up-> loc18: e31\n1<=x1<2, x2==4
+loc18 -down-> loc14: e32\n1<=x1<2, x2==4
+loc15 -right-> loc16: e33\n x1 ==3,3<=x2<4
+loc16 -left-> loc15: e34\n x1 ==3,3<=x2<4
+loc15 -up-> loc19: e35\n2<=x1<3, x2==4
+loc19 -down-> loc15: e36\n2<=x1<3, x2==4
+loc16 -up-> loc20: e37\n3<=x1<4, x2==4
+loc20 -down-> loc16: e38\n3<=x1<4, x2==4
+loc17 -right-> loc18: e39\n x1 ==1,4<=x2<5\n c := 10
+loc18 -left-> loc17: e40\n x1 ==1,4<=x2<5
+loc18 -right-> loc19: e41\n x1 ==2,4<=x2<5
+loc19 -left-> loc18: e42\n x1 ==2,4<=x2<5
+loc19 -right-> loc20: e43\n x1 ==3,4<=x2<5
+loc20 -left-> loc19: e44\n x1 ==3,4<=x2<5
+@enduml

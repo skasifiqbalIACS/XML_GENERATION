@@ -25,8 +25,9 @@ public: */
     /* UnsatFileGenerator::UnsatFileGenerator(int targetFiles, int rows, int cols, int type1, int type2, int type3)
     : targetUnsatFiles(targetFiles), rowSize(rows), colSize(cols), numType1(type1), numType2(type2), numType3(type3) {} */
 
-    UnsatFileGenerator::UnsatFileGenerator(int targetFiles, int rows, int cols, int type1, int type2, int type3, int depth, int startingCharge)
-    : targetUnsatFiles(targetFiles), rowSize(rows), colSize(cols), numType1(type1), numType2(type2), numType3(type3), depth(depth), startingCharge(startingCharge) {}
+    /* UnsatFileGenerator::UnsatFileGenerator(int targetFiles, int rows, int cols, int type1, int type2, int type3, int depth, int startingCharge)
+    : targetUnsatFiles(targetFiles), rowSize(rows), colSize(cols), numType1(type1), numType2(type2), numType3(type3), depth(depth), startingCharge(startingCharge) {
+    }
 
     void UnsatFileGenerator::generateFiles()
     {
@@ -38,7 +39,7 @@ public: */
             // Generates XML and CFG files using the GenerateXml instance
             xmlGenerator.GenerateFilesForModel(baseName, rowSize, colSize, numType1, numType2, numType3, depth, startingCharge);
 
-            sleep(1);
+            // sleep(1);
 
             // The cH_Replay function should be adjusted to work with paths for XML and CFG files
             if (!cH_Replay(baseName)) {
@@ -57,6 +58,50 @@ public: */
                 cout << "SAT path found for " << baseName << ". Deleting files." << endl;
             }
         }
+    } */
+    UnsatFileGenerator::UnsatFileGenerator(int targetFiles, int satFiles, int rows, int cols, int type1, int type2, int type3, int d, int charge)
+        : targetUnsatFiles(targetFiles), targetSatFiles(satFiles), rowSize(rows), colSize(cols),
+          numType1(type1), numType2(type2), numType3(type3), depth(d), startingCharge(charge) {}
+
+    void UnsatFileGenerator::generateFiles() {
+        int generatedUnsatFiles = 0;
+        int generatedSatFiles = 0; // Counter for SAT files
+        int attempt = 1;
+
+        while (generatedUnsatFiles < targetUnsatFiles || generatedSatFiles < targetSatFiles) {
+            string baseName = "model_" + to_string(attempt++);
+            
+            xmlGenerator.GenerateFilesForModel(baseName, rowSize, colSize, numType1, numType2, numType3, depth, startingCharge);
+
+            if (!cH_Replay(baseName)) {
+                if (generatedUnsatFiles < targetUnsatFiles) {
+                    generatedUnsatFiles++;
+                    cout << "UNSAT path found for " << baseName << ". Keeping files." << endl;
+                } else {
+                    // If we already have enough UNSAT files
+                    deleteFiles(baseName);
+                }
+            } else {
+                if (generatedSatFiles < targetSatFiles) {
+                    generatedSatFiles++;
+                    cout << "SAT path found for " << baseName << ". Keeping files." << endl;
+                } else {
+                    // If we already have enough SAT files
+                    deleteFiles(baseName);
+                }
+            }
+        }
+    }
+
+    void UnsatFileGenerator::deleteFiles(const string& baseName) {
+        string xmlPath = "generated_models/" + baseName + ".xml";
+        string cfgPath = "generated_models/" + baseName + ".cfg";
+        string pumlPath = "generated_models/" + baseName + ".puml";
+
+        remove(xmlPath.c_str());
+        remove(cfgPath.c_str());
+        remove(pumlPath.c_str());
+        cout << "Extra file for " << baseName << ". Deleting files." << endl;
     }
 
     /*bool UnsatFileGenerator::cH_Replay(const string& str) {
@@ -143,10 +188,10 @@ public: */
 
 bool UnsatFileGenerator::cH_Replay(const string& str) {
     // Defines the path to your BACH directory and the lib directory within it
+
     std::string bachPath = "/home/asif/BACH-5.5";
     std::string libPath = bachPath + "/lib"; // libcryptominisat5.so.5.6 is here
-    std::string depthbound = std::to_string((int)depth);
-    std::cout << depth << std::endl;
+    std::string depthbound = std::to_string(depth);
     // std::string depthbound = std::to_string(20);
 
     // Constructs the command

@@ -6,6 +6,7 @@
 #include "tinyxml2.h"
 #include <map>
 #include <string>
+#include <random>
 
 namespace tinyxml2 {
     class XMLNode;
@@ -34,7 +35,9 @@ private:
     int numType1, numType2, numType3;
     int depth;
     int charge;
-    std::map<int, SpecialLocationType> specialLocations;
+    /* std::map<int, SpecialLocationType> specialLocations;
+    std::mt19937 rng; // Mersenne Twister pseudo-random generator
+    std::uniform_int_distribution<std::mt19937::result_type> dist; */
 
     void AddParameters(tinyxml2::XMLNode* component, int numVariables, int numTransitions);
     void AddLocation(tinyxml2::XMLNode* component, int id, int x1Min, int x1Max, int x2Min, int x2Max, SpecialLocationType specialType = SpecialLocationType::None);

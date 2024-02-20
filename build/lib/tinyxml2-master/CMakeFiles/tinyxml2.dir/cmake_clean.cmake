@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o"
+  "CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o.d"
   "libtinyxml2.a"
   "libtinyxml2.pdb"
 )

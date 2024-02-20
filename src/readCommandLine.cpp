@@ -15,7 +15,8 @@ void readCommandLine(int argc, char *argv[], userOptions& user_options) {
         ("numBarriers,b", po::value<unsigned int>()->default_value(2), "Set number of barriers")
         ("numOilSpills,o", po::value<unsigned int>()->default_value(2), "Set number of oil spill locations")
         ("numChargingStations,s", po::value<unsigned int>()->default_value(1), "Set number of charging stations")
-        ("numUnsatModels,u", po::value<unsigned int>()->default_value(1), "Set number of unsat model files required")
+        ("numUnsatModels,um", po::value<unsigned int>()->default_value(1), "Set number of unsat model files required")
+        ("numSatModels,sm", po::value<unsigned int>()->default_value(0), "Set number of sat model files required")
         ("depth,d", po::value<unsigned int>()->default_value(10), "Set the depth of paths to be checked")
         ("startingCharge,sc", po::value<double>()->default_value(10), "Set the starting charge for the agent");
 
@@ -49,6 +50,10 @@ void readCommandLine(int argc, char *argv[], userOptions& user_options) {
 
     if (vm.count("numUnsatModels")) {
         user_options.setNumUnsatModels(vm["numUnsatModels"].as<unsigned int>());
+    }
+
+    if (vm.count("numSatModels")) {
+        user_options.setNumSatModels(vm["numSatModels"].as<unsigned int>());
     }
 
     if (vm.count("depth")) {

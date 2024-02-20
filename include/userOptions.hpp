@@ -19,6 +19,7 @@ public:
     unsigned int getNumChargingStations() const;
     unsigned int getStartingCharge() const;
     unsigned int getNumUnsatModels() const;
+    unsigned int getNumSatModels() const;
     unsigned int getDepth() const;
 
     void setRowSize(unsigned int rs);
@@ -28,6 +29,7 @@ public:
     void setNumChargingStations(unsigned int ncs);
     void setStartingCharge(unsigned int charge);
     void setNumUnsatModels(unsigned int num);
+    void setNumSatModels(unsigned int num);
     void setDepth(unsigned int depth);
 
 private:
@@ -37,9 +39,9 @@ private:
     unsigned int numOilSpills;
     unsigned int numChargingStations;
     unsigned int numUnsatModels;
+    unsigned int numSatModels;
     unsigned int depth;
     unsigned int startingCharge;
 
 };
-
 #endif // USEROPTIONS_HPP

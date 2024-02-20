@@ -1,9 +1,16 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/XML_GENERATION.dir/src/WarehouseAutomationPlantUMLGenerator.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/WarehouseAutomationPlantUMLGenerator.cpp.o.d"
   "CMakeFiles/XML_GENERATION.dir/src/filegenerator.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/filegenerator.cpp.o.d"
   "CMakeFiles/XML_GENERATION.dir/src/main.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/main.cpp.o.d"
   "CMakeFiles/XML_GENERATION.dir/src/readCommandLine.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/readCommandLine.cpp.o.d"
   "CMakeFiles/XML_GENERATION.dir/src/userOptions.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/userOptions.cpp.o.d"
   "CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o.d"
   "XML_GENERATION"
   "XML_GENERATION.pdb"
 )

@@ -3,7 +3,7 @@ Spec  File : generated_models/unsat_model_1.cfg
 Parsing XML...
 Parsing XML Success
 ------------setReachSpec()------------src/automata/Automaton.cpp:451-----------------
-loc()==loc5
+loc()==loc18
 ------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
 x1[0][null]
 ------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
@@ -19,24 +19,28 @@ variable:c[2][null]
 shared variable:x1[0]
 used Automaton:
 read Transition:
-e45[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
-e50[warehouse_automation_agent]
-e49[warehouse_automation_agent]
-e44[warehouse_automation_agent]
-e43[warehouse_automation_agent]
-e42[warehouse_automation_agent]
-e41[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e38[warehouse_automation_agent]
-e37[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e35[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 e34[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e13[warehouse_automation_agent]
 e1[warehouse_automation_agent]
 e2[warehouse_automation_agent]
 e3[warehouse_automation_agent]
@@ -49,48 +53,34 @@ e9[warehouse_automation_agent]
 e10[warehouse_automation_agent]
 e11[warehouse_automation_agent]
 e12[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-e14[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-e16[warehouse_automation_agent]
-e17[warehouse_automation_agent]
-e18[warehouse_automation_agent]
-e19[warehouse_automation_agent]
-e20[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-e24[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-e28[warehouse_automation_agent]
-e29[warehouse_automation_agent]
-e30[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 target$0[warehouse_automation_agent]
 written Transition:
 used Transition:
-e45[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
-e50[warehouse_automation_agent]
-e49[warehouse_automation_agent]
-e44[warehouse_automation_agent]
-e43[warehouse_automation_agent]
-e42[warehouse_automation_agent]
-e41[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e38[warehouse_automation_agent]
-e37[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e35[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 e34[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e13[warehouse_automation_agent]
 e1[warehouse_automation_agent]
 e2[warehouse_automation_agent]
 e3[warehouse_automation_agent]
@@ -103,27 +93,9 @@ e9[warehouse_automation_agent]
 e10[warehouse_automation_agent]
 e11[warehouse_automation_agent]
 e12[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-e14[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-e16[warehouse_automation_agent]
-e17[warehouse_automation_agent]
-e18[warehouse_automation_agent]
-e19[warehouse_automation_agent]
-e20[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-e24[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-e28[warehouse_automation_agent]
-e29[warehouse_automation_agent]
-e30[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 target$0[warehouse_automation_agent]
 read State:
 loc1(0)[warehouse_automation_agent]
@@ -150,24 +122,28 @@ loc20(19)[warehouse_automation_agent]
 shared variable:x2[1]
 used Automaton:
 read Transition:
-e45[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
-e50[warehouse_automation_agent]
-e49[warehouse_automation_agent]
-e44[warehouse_automation_agent]
-e43[warehouse_automation_agent]
-e42[warehouse_automation_agent]
-e41[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e38[warehouse_automation_agent]
-e37[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e35[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 e34[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e13[warehouse_automation_agent]
 e1[warehouse_automation_agent]
 e2[warehouse_automation_agent]
 e3[warehouse_automation_agent]
@@ -180,48 +156,34 @@ e9[warehouse_automation_agent]
 e10[warehouse_automation_agent]
 e11[warehouse_automation_agent]
 e12[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-e14[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-e16[warehouse_automation_agent]
-e17[warehouse_automation_agent]
-e18[warehouse_automation_agent]
-e19[warehouse_automation_agent]
-e20[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-e24[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-e28[warehouse_automation_agent]
-e29[warehouse_automation_agent]
-e30[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 target$0[warehouse_automation_agent]
 written Transition:
 used Transition:
-e45[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
-e50[warehouse_automation_agent]
-e49[warehouse_automation_agent]
-e44[warehouse_automation_agent]
-e43[warehouse_automation_agent]
-e42[warehouse_automation_agent]
-e41[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e38[warehouse_automation_agent]
-e37[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e35[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 e34[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e13[warehouse_automation_agent]
 e1[warehouse_automation_agent]
 e2[warehouse_automation_agent]
 e3[warehouse_automation_agent]
@@ -234,27 +196,9 @@ e9[warehouse_automation_agent]
 e10[warehouse_automation_agent]
 e11[warehouse_automation_agent]
 e12[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-e14[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-e16[warehouse_automation_agent]
-e17[warehouse_automation_agent]
-e18[warehouse_automation_agent]
-e19[warehouse_automation_agent]
-e20[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-e24[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-e28[warehouse_automation_agent]
-e29[warehouse_automation_agent]
-e30[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 target$0[warehouse_automation_agent]
 read State:
 loc1(0)[warehouse_automation_agent]
@@ -281,24 +225,28 @@ loc20(19)[warehouse_automation_agent]
 shared variable:c[2]
 used Automaton:
 read Transition:
-e45[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
-e50[warehouse_automation_agent]
-e49[warehouse_automation_agent]
-e44[warehouse_automation_agent]
-e43[warehouse_automation_agent]
-e42[warehouse_automation_agent]
-e41[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e38[warehouse_automation_agent]
-e37[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e35[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 e34[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e13[warehouse_automation_agent]
 e1[warehouse_automation_agent]
 e2[warehouse_automation_agent]
 e3[warehouse_automation_agent]
@@ -311,48 +259,34 @@ e9[warehouse_automation_agent]
 e10[warehouse_automation_agent]
 e11[warehouse_automation_agent]
 e12[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-e14[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-e16[warehouse_automation_agent]
-e17[warehouse_automation_agent]
-e18[warehouse_automation_agent]
-e19[warehouse_automation_agent]
-e20[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-e24[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-e28[warehouse_automation_agent]
-e29[warehouse_automation_agent]
-e30[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 target$0[warehouse_automation_agent]
 written Transition:
 used Transition:
-e45[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
-e50[warehouse_automation_agent]
-e49[warehouse_automation_agent]
-e44[warehouse_automation_agent]
-e43[warehouse_automation_agent]
-e42[warehouse_automation_agent]
-e41[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e38[warehouse_automation_agent]
-e37[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e35[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 e34[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e13[warehouse_automation_agent]
 e1[warehouse_automation_agent]
 e2[warehouse_automation_agent]
 e3[warehouse_automation_agent]
@@ -365,27 +299,9 @@ e9[warehouse_automation_agent]
 e10[warehouse_automation_agent]
 e11[warehouse_automation_agent]
 e12[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-e14[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-e16[warehouse_automation_agent]
-e17[warehouse_automation_agent]
-e18[warehouse_automation_agent]
-e19[warehouse_automation_agent]
-e20[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-e24[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-e28[warehouse_automation_agent]
-e29[warehouse_automation_agent]
-e30[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 target$0[warehouse_automation_agent]
 read State:
 loc1(0)[warehouse_automation_agent]
@@ -444,17 +360,11 @@ Invariants:
 ( x2[1][null] <= 1 )
 ( c[2][null] >= 0.1 )
 Flows:
-( x1[0][null]' >= -1 )
-( x1[0][null]' <= 1 )
-( x2[1][null]' >= -1 )
-( x2[1][null]' <= 1 )
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
 ( c[2][null]' = -1 )
 Next:
-e2[warehouse_automation_agent]
-e3[warehouse_automation_agent]
 Pre:
-e1[warehouse_automation_agent]
-e4[warehouse_automation_agent]
 
 State:
 loc3,2
@@ -469,16 +379,11 @@ Flows:
 ( x1[0][null]' <= 1 )
 ( x2[1][null]' >= -1 )
 ( x2[1][null]' <= 1 )
-( c[2][null]' = -2 )
+( c[2][null]' = -1 )
 Next:
-e4[warehouse_automation_agent]
-e5[warehouse_automation_agent]
-e7[warehouse_automation_agent]
-Pre:
 e3[warehouse_automation_agent]
-e6[warehouse_automation_agent]
-e8[warehouse_automation_agent]
-initial$0[warehouse_automation_agent]
+Pre:
+e4[warehouse_automation_agent]
 
 State:
 loc4,3
@@ -489,17 +394,11 @@ Invariants:
 ( x2[1][null] <= 1 )
 ( c[2][null] >= 0.1 )
 Flows:
-( x1[0][null]' >= -1 )
-( x1[0][null]' <= 1 )
-( x2[1][null]' >= -1 )
-( x2[1][null]' <= 1 )
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
 ( c[2][null]' = -1 )
 Next:
-e6[warehouse_automation_agent]
-e9[warehouse_automation_agent]
 Pre:
-e5[warehouse_automation_agent]
-e10[warehouse_automation_agent]
 
 State:
 loc5,4
@@ -510,12 +409,17 @@ Invariants:
 ( x2[1][null] <= 2 )
 ( c[2][null] >= 0.1 )
 Flows:
-( x1[0][null]' = 0 )
-( x2[1][null]' = 0 )
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-target$0[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e5[warehouse_automation_agent]
 Pre:
+e1[warehouse_automation_agent]
+e6[warehouse_automation_agent]
 
 State:
 loc6,5
@@ -547,13 +451,13 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e8[warehouse_automation_agent]
-e11[warehouse_automation_agent]
-e13[warehouse_automation_agent]
-Pre:
+e4[warehouse_automation_agent]
 e7[warehouse_automation_agent]
-e12[warehouse_automation_agent]
-e14[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+Pre:
+e3[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e10[warehouse_automation_agent]
 
 State:
 loc8,7
@@ -570,13 +474,11 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e10[warehouse_automation_agent]
-e12[warehouse_automation_agent]
-e15[warehouse_automation_agent]
-Pre:
-e9[warehouse_automation_agent]
+e8[warehouse_automation_agent]
 e11[warehouse_automation_agent]
-e16[warehouse_automation_agent]
+Pre:
+e7[warehouse_automation_agent]
+e12[warehouse_automation_agent]
 
 State:
 loc9,8
@@ -591,13 +493,15 @@ Flows:
 ( x1[0][null]' <= 1 )
 ( x2[1][null]' >= -1 )
 ( x2[1][null]' <= 1 )
-( c[2][null]' = -2 )
+( c[2][null]' = 0 )
 Next:
-e17[warehouse_automation_agent]
-e19[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e15[warehouse_automation_agent]
 Pre:
-e18[warehouse_automation_agent]
-e20[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e16[warehouse_automation_agent]
 
 State:
 loc10,9
@@ -614,13 +518,13 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e18[warehouse_automation_agent]
-e21[warehouse_automation_agent]
-e23[warehouse_automation_agent]
-Pre:
+e14[warehouse_automation_agent]
 e17[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e24[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+Pre:
+e13[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e20[warehouse_automation_agent]
 
 State:
 loc11,10
@@ -637,15 +541,15 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e14[warehouse_automation_agent]
-e22[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e27[warehouse_automation_agent]
-Pre:
-e13[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e18[warehouse_automation_agent]
 e21[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e28[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+Pre:
+e9[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e24[warehouse_automation_agent]
 
 State:
 loc12,11
@@ -662,13 +566,11 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e16[warehouse_automation_agent]
-e26[warehouse_automation_agent]
-e29[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e22[warehouse_automation_agent]
 Pre:
-e15[warehouse_automation_agent]
-e25[warehouse_automation_agent]
-e30[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e21[warehouse_automation_agent]
 
 State:
 loc13,12
@@ -683,15 +585,13 @@ Flows:
 ( x1[0][null]' <= 1 )
 ( x2[1][null]' >= -1 )
 ( x2[1][null]' <= 1 )
-( c[2][null]' = 0 )
+( c[2][null]' = -1 )
 Next:
-e20[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e33[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e25[warehouse_automation_agent]
 Pre:
-e19[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e34[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e26[warehouse_automation_agent]
 
 State:
 loc14,13
@@ -708,15 +608,15 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e24[warehouse_automation_agent]
-e32[warehouse_automation_agent]
-e35[warehouse_automation_agent]
-e37[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e29[warehouse_automation_agent]
 Pre:
-e23[warehouse_automation_agent]
-e31[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e38[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e30[warehouse_automation_agent]
 
 State:
 loc15,14
@@ -733,15 +633,13 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
+e24[warehouse_automation_agent]
 e28[warehouse_automation_agent]
-e36[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e41[warehouse_automation_agent]
+e31[warehouse_automation_agent]
 Pre:
+e23[warehouse_automation_agent]
 e27[warehouse_automation_agent]
-e35[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e42[warehouse_automation_agent]
+e32[warehouse_automation_agent]
 
 State:
 loc16,15
@@ -752,19 +650,11 @@ Invariants:
 ( x2[1][null] <= 4 )
 ( c[2][null] >= 0.1 )
 Flows:
-( x1[0][null]' >= -1 )
-( x1[0][null]' <= 1 )
-( x2[1][null]' >= -1 )
-( x2[1][null]' <= 1 )
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
 ( c[2][null]' = -1 )
 Next:
-e30[warehouse_automation_agent]
-e40[warehouse_automation_agent]
-e43[warehouse_automation_agent]
 Pre:
-e29[warehouse_automation_agent]
-e39[warehouse_automation_agent]
-e44[warehouse_automation_agent]
 
 State:
 loc17,16
@@ -775,17 +665,11 @@ Invariants:
 ( x2[1][null] <= 5 )
 ( c[2][null] >= 0.1 )
 Flows:
-( x1[0][null]' >= -1 )
-( x1[0][null]' <= 1 )
-( x2[1][null]' >= -1 )
-( x2[1][null]' <= 1 )
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
 ( c[2][null]' = -1 )
 Next:
-e34[warehouse_automation_agent]
-e45[warehouse_automation_agent]
 Pre:
-e33[warehouse_automation_agent]
-e46[warehouse_automation_agent]
 
 State:
 loc18,17
@@ -800,15 +684,14 @@ Flows:
 ( x1[0][null]' <= 1 )
 ( x2[1][null]' >= -1 )
 ( x2[1][null]' <= 1 )
-( c[2][null]' = -1 )
+( c[2][null]' = -2 )
 Next:
-e38[warehouse_automation_agent]
-e46[warehouse_automation_agent]
-e47[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
 Pre:
-e37[warehouse_automation_agent]
-e45[warehouse_automation_agent]
-e48[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e34[warehouse_automation_agent]
 
 State:
 loc19,18
@@ -823,15 +706,16 @@ Flows:
 ( x1[0][null]' <= 1 )
 ( x2[1][null]' >= -1 )
 ( x2[1][null]' <= 1 )
-( c[2][null]' = -1 )
+( c[2][null]' = -2 )
 Next:
-e42[warehouse_automation_agent]
-e48[warehouse_automation_agent]
-e49[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e35[warehouse_automation_agent]
 Pre:
-e41[warehouse_automation_agent]
-e47[warehouse_automation_agent]
-e50[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
 
 State:
 loc20,19
@@ -848,11 +732,9 @@ Flows:
 ( x2[1][null]' <= 1 )
 ( c[2][null]' = -1 )
 Next:
-e44[warehouse_automation_agent]
-e50[warehouse_automation_agent]
+e36[warehouse_automation_agent]
 Pre:
-e43[warehouse_automation_agent]
-e49[warehouse_automation_agent]
+e35[warehouse_automation_agent]
 
 State:
 warehouse_automation_agent$initial,20
@@ -871,202 +753,202 @@ Pre:
 target$0[warehouse_automation_agent]
 
 Transition:
-e1(loc1->loc2)
+e1(loc1->loc5)
 ID:0
 Guards:
-( x1[0][null] = 0 )
-( x2[1][null] >= 0 )
-( x2[1][null] < 1 )
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 1 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e2(loc2->loc1)
+e2(loc5->loc1)
 ID:1
 Guards:
-( x1[0][null] = 1 )
-( x2[1][null] >= 0 )
-( x2[1][null] < 1 )
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 1 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e3(loc2->loc3)
+e3(loc3->loc7)
 ID:2
 Guards:
-( x1[0][null] = 1 )
-( x2[1][null] >= 0 )
-( x2[1][null] < 1 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 1 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e4(loc3->loc2)
+e4(loc7->loc3)
 ID:3
 Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 0 )
-( x2[1][null] < 1 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 1 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e5(loc3->loc4)
+e5(loc5->loc9)
 ID:4
 Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 0 )
-( x2[1][null] < 1 )
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e6(loc4->loc3)
+e6(loc9->loc5)
 ID:5
 Guards:
-( x1[0][null] = 3 )
-( x2[1][null] >= 0 )
-( x2[1][null] < 1 )
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e7(loc3->loc7)
+e7(loc7->loc8)
 ID:6
 Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 0 )
+( x1[0][null] = 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e8(loc7->loc3)
+e8(loc8->loc7)
 ID:7
 Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 1 )
+( x1[0][null] = 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e9(loc4->loc8)
+e9(loc7->loc11)
 ID:8
 Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 0 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e10(loc8->loc4)
+e10(loc11->loc7)
 ID:9
 Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 1 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e11(loc7->loc8)
+e11(loc8->loc12)
 ID:10
 Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 1 )
-( x2[1][null] < 2 )
+( x1[0][null] >= 3 )
+( x1[0][null] < 4 )
+( x2[1][null] = 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e12(loc8->loc7)
+e12(loc12->loc8)
 ID:11
 Guards:
-( x1[0][null] = 3 )
-( x2[1][null] >= 1 )
-( x2[1][null] < 2 )
+( x1[0][null] >= 3 )
+( x1[0][null] < 4 )
+( x2[1][null] = 2 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e13(loc7->loc11)
+e13(loc9->loc10)
 ID:12
 Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 1 )
+( x1[0][null] = 1 )
+( x2[1][null] >= 2 )
+( x2[1][null] < 3 )
 Resets:
+( c[2][null]' = 10 )
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
 
 Transition:
-e14(loc11->loc7)
+e14(loc10->loc9)
 ID:13
 Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 2 )
+( x1[0][null] = 1 )
+( x2[1][null] >= 2 )
+( x2[1][null] < 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e15(loc8->loc12)
+e15(loc9->loc13)
 ID:14
 Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 1 )
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 3 )
 Resets:
+( c[2][null]' = 10 )
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
 
 Transition:
-e16(loc12->loc8)
+e16(loc13->loc9)
 ID:15
 Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 2 )
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e17(loc9->loc10)
+e17(loc10->loc11)
 ID:16
 Guards:
-( x1[0][null] = 0 )
+( x1[0][null] = 2 )
 ( x2[1][null] >= 2 )
 ( x2[1][null] < 3 )
 Resets:
@@ -1075,10 +957,10 @@ Resets:
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e18(loc10->loc9)
+e18(loc11->loc10)
 ID:17
 Guards:
-( x1[0][null] = 1 )
+( x1[0][null] = 2 )
 ( x2[1][null] >= 2 )
 ( x2[1][null] < 3 )
 Resets:
@@ -1087,23 +969,23 @@ Resets:
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e19(loc9->loc13)
+e19(loc10->loc14)
 ID:18
 Guards:
-( x1[0][null] >= 0 )
-( x1[0][null] < 1 )
-( x2[1][null] = 2 )
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e20(loc13->loc9)
+e20(loc14->loc10)
 ID:19
 Guards:
-( x1[0][null] >= 0 )
-( x1[0][null] < 1 )
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
 ( x2[1][null] = 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
@@ -1111,10 +993,10 @@ Resets:
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e21(loc10->loc11)
+e21(loc11->loc12)
 ID:20
 Guards:
-( x1[0][null] = 1 )
+( x1[0][null] = 3 )
 ( x2[1][null] >= 2 )
 ( x2[1][null] < 3 )
 Resets:
@@ -1123,10 +1005,10 @@ Resets:
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e22(loc11->loc10)
+e22(loc12->loc11)
 ID:21
 Guards:
-( x1[0][null] = 2 )
+( x1[0][null] = 3 )
 ( x2[1][null] >= 2 )
 ( x2[1][null] < 3 )
 Resets:
@@ -1135,23 +1017,23 @@ Resets:
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e23(loc10->loc14)
+e23(loc11->loc15)
 ID:22
 Guards:
-( x1[0][null] >= 1 )
-( x1[0][null] < 2 )
-( x2[1][null] = 2 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e24(loc14->loc10)
+e24(loc15->loc11)
 ID:23
 Guards:
-( x1[0][null] >= 1 )
-( x1[0][null] < 2 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
 ( x2[1][null] = 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
@@ -1159,332 +1041,164 @@ Resets:
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e25(loc11->loc12)
+e25(loc13->loc14)
 ID:24
 Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 2 )
-( x2[1][null] < 3 )
+( x1[0][null] = 1 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e26(loc12->loc11)
+e26(loc14->loc13)
 ID:25
 Guards:
-( x1[0][null] = 3 )
-( x2[1][null] >= 2 )
-( x2[1][null] < 3 )
+( x1[0][null] = 1 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e27(loc11->loc15)
+e27(loc14->loc15)
 ID:26
 Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 2 )
+( x1[0][null] = 2 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e28(loc15->loc11)
+e28(loc15->loc14)
 ID:27
 Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 3 )
+( x1[0][null] = 2 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e29(loc12->loc16)
+e29(loc14->loc18)
 ID:28
 Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 2 )
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e30(loc16->loc12)
+e30(loc18->loc14)
 ID:29
 Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 3 )
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e31(loc13->loc14)
+e31(loc15->loc19)
 ID:30
 Guards:
-( x1[0][null] = 0 )
-( x2[1][null] >= 3 )
-( x2[1][null] < 4 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 4 )
 Resets:
-( c[2][null]' = 10 )
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
 
 Transition:
-e32(loc14->loc13)
+e32(loc19->loc15)
 ID:31
 Guards:
-( x1[0][null] = 1 )
-( x2[1][null] >= 3 )
-( x2[1][null] < 4 )
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 4 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e33(loc13->loc17)
+e33(loc18->loc19)
 ID:32
 Guards:
-( x1[0][null] >= 0 )
-( x1[0][null] < 1 )
-( x2[1][null] = 3 )
+( x1[0][null] = 2 )
+( x2[1][null] >= 4 )
+( x2[1][null] < 5 )
 Resets:
-( c[2][null]' = 10 )
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
 
 Transition:
-e34(loc17->loc13)
+e34(loc19->loc18)
 ID:33
 Guards:
-( x1[0][null] >= 0 )
-( x1[0][null] < 1 )
-( x2[1][null] = 4 )
+( x1[0][null] = 2 )
+( x2[1][null] >= 4 )
+( x2[1][null] < 5 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e35(loc14->loc15)
+e35(loc19->loc20)
 ID:34
 Guards:
-( x1[0][null] = 1 )
-( x2[1][null] >= 3 )
-( x2[1][null] < 4 )
+( x1[0][null] = 3 )
+( x2[1][null] >= 4 )
+( x2[1][null] < 5 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e36(loc15->loc14)
+e36(loc20->loc19)
 ID:35
 Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 3 )
-( x2[1][null] < 4 )
+( x1[0][null] = 3 )
+( x2[1][null] >= 4 )
+( x2[1][null] < 5 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-e37(loc14->loc18)
+initial$0(warehouse_automation_agent$initial->loc19)
 ID:36
 Guards:
-( x1[0][null] >= 1 )
-( x1[0][null] < 2 )
-( x2[1][null] = 3 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e38(loc18->loc14)
-ID:37
-Guards:
-( x1[0][null] >= 1 )
-( x1[0][null] < 2 )
-( x2[1][null] = 4 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e39(loc15->loc16)
-ID:38
-Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 3 )
-( x2[1][null] < 4 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e40(loc16->loc15)
-ID:39
-Guards:
-( x1[0][null] = 3 )
-( x2[1][null] >= 3 )
-( x2[1][null] < 4 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e41(loc15->loc19)
-ID:40
-Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 3 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e42(loc19->loc15)
-ID:41
-Guards:
-( x1[0][null] >= 2 )
-( x1[0][null] < 3 )
-( x2[1][null] = 4 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e43(loc16->loc20)
-ID:42
-Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 3 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e44(loc20->loc16)
-ID:43
-Guards:
-( x1[0][null] >= 3 )
-( x1[0][null] < 4 )
-( x2[1][null] = 4 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e45(loc17->loc18)
-ID:44
-Guards:
-( x1[0][null] = 0 )
-( x2[1][null] >= 4 )
-( x2[1][null] < 5 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e46(loc18->loc17)
-ID:45
-Guards:
-( x1[0][null] = 1 )
-( x2[1][null] >= 4 )
-( x2[1][null] < 5 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e47(loc18->loc19)
-ID:46
-Guards:
-( x1[0][null] = 1 )
-( x2[1][null] >= 4 )
-( x2[1][null] < 5 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e48(loc19->loc18)
-ID:47
-Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 4 )
-( x2[1][null] < 5 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e49(loc19->loc20)
-ID:48
-Guards:
-( x1[0][null] = 2 )
-( x2[1][null] >= 4 )
-( x2[1][null] < 5 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-e50(loc20->loc19)
-ID:49
-Guards:
-( x1[0][null] = 3 )
-( x2[1][null] >= 4 )
-( x2[1][null] < 5 )
-Resets:
-( x1[0][null]' = x1[0][null] )
-( x2[1][null]' = x2[1][null] )
-( c[2][null]' = c[2][null] )
-
-Transition:
-initial$0(warehouse_automation_agent$initial->loc3)
-ID:50
-Guards:
 ( x1[0][null] = 2.7 )
-( x2[1][null] = 0.8 )
-( c[2][null] = 10 )
+( x2[1][null] = 4.6 )
+( c[2][null] = 3 )
 Resets:
 ( x1[0][null]' = x1[0][null] )
 ( x2[1][null]' = x2[1][null] )
 ( c[2][null]' = c[2][null] )
 
 Transition:
-target$0(loc5->warehouse_automation_agent$target)
-ID:51
+target$0(loc18->warehouse_automation_agent$target)
+ID:37
 Guards:
 Resets:
 
@@ -1500,14 +1214,19 @@ reach spec:
 z3solver
 ------------check()------------src/BMC/modelCheck.cpp:657-----------------
 
-Cryptominisat
-version:5.6.8
-UNREACHABLE
-0 paths were checked
-Time of Encoding Graph: 0.141571 s
-Time of Searching Path: 0.000039 s
-Time of Decoding  Path: 0.000000 s
-Time of Checking  Path: 0.000000 s
+Z3:Z3 4.5.1.0
+PATH no.1:
+warehouse_automation_agent:	warehouse_automation_agent$initial(20)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc19(18)[warehouse_automation_agent] -> e34[warehouse_automation_agent] ->	loc18(17)[warehouse_automation_agent] -> e33[warehouse_automation_agent] ->	loc19(18)[warehouse_automation_agent] -> e34[warehouse_automation_agent] ->	loc18(17)[warehouse_automation_agent] -> target$0[warehouse_automation_agent] ->	warehouse_automation_agent$target(21)[warehouse_automation_agent]
+
+sat
+REACHABLE
+1 paths were checked
+WITNESS:
+warehouse_automation_agent:	warehouse_automation_agent$initial(20)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc19(18)[warehouse_automation_agent] -> e34[warehouse_automation_agent] ->	loc18(17)[warehouse_automation_agent] -> e33[warehouse_automation_agent] ->	loc19(18)[warehouse_automation_agent] -> e34[warehouse_automation_agent] ->	loc18(17)[warehouse_automation_agent] -> target$0[warehouse_automation_agent] ->	warehouse_automation_agent$target(21)[warehouse_automation_agent]
+Time of Encoding Graph: 0.025262 s
+Time of Searching Path: 0.021580 s
+Time of Decoding  Path: 0.000125 s
+Time of Checking  Path: 0.002050 s
 Time of Refining Model: 0.000000 s
 Memory used: 56.00 MB
-CPU Time: 0.163339 s
+CPU Time: 0.064248 s

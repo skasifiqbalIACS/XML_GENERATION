@@ -1,0 +1,1484 @@
+Model File : generated_models/model_28.xml
+Spec  File : generated_models/model_28.cfg
+Parsing XML...
+Parsing XML Success
+------------setReachSpec()------------src/automata/Automaton.cpp:451-----------------
+loc()==loc5
+------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
+x1[0][null]
+------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
+x2[1][null]
+------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
+c[2][null]
+*******************ComposedAutomata Information*********************
+Automaton:warehouse_automation_agent
+variable:x1[0][null]
+variable:x2[1][null]
+variable:c[2][null]
+
+shared variable:x1[0]
+used Automaton:
+read Transition:
+e44[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e1[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+written Transition:
+used Transition:
+e44[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e1[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+read State:
+loc1(0)[warehouse_automation_agent]
+loc2(1)[warehouse_automation_agent]
+loc3(2)[warehouse_automation_agent]
+loc4(3)[warehouse_automation_agent]
+loc5(4)[warehouse_automation_agent]
+loc6(5)[warehouse_automation_agent]
+loc7(6)[warehouse_automation_agent]
+loc8(7)[warehouse_automation_agent]
+loc9(8)[warehouse_automation_agent]
+loc18(17)[warehouse_automation_agent]
+loc10(9)[warehouse_automation_agent]
+loc11(10)[warehouse_automation_agent]
+loc12(11)[warehouse_automation_agent]
+loc13(12)[warehouse_automation_agent]
+loc14(13)[warehouse_automation_agent]
+loc15(14)[warehouse_automation_agent]
+loc16(15)[warehouse_automation_agent]
+loc17(16)[warehouse_automation_agent]
+loc19(18)[warehouse_automation_agent]
+loc20(19)[warehouse_automation_agent]
+
+shared variable:x2[1]
+used Automaton:
+read Transition:
+e44[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e1[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+written Transition:
+used Transition:
+e44[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e1[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+read State:
+loc1(0)[warehouse_automation_agent]
+loc2(1)[warehouse_automation_agent]
+loc3(2)[warehouse_automation_agent]
+loc4(3)[warehouse_automation_agent]
+loc5(4)[warehouse_automation_agent]
+loc6(5)[warehouse_automation_agent]
+loc7(6)[warehouse_automation_agent]
+loc8(7)[warehouse_automation_agent]
+loc9(8)[warehouse_automation_agent]
+loc18(17)[warehouse_automation_agent]
+loc10(9)[warehouse_automation_agent]
+loc11(10)[warehouse_automation_agent]
+loc12(11)[warehouse_automation_agent]
+loc13(12)[warehouse_automation_agent]
+loc14(13)[warehouse_automation_agent]
+loc15(14)[warehouse_automation_agent]
+loc16(15)[warehouse_automation_agent]
+loc17(16)[warehouse_automation_agent]
+loc19(18)[warehouse_automation_agent]
+loc20(19)[warehouse_automation_agent]
+
+shared variable:c[2]
+used Automaton:
+read Transition:
+e44[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e1[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+written Transition:
+used Transition:
+e44[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+e1[warehouse_automation_agent]
+e2[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+read State:
+loc1(0)[warehouse_automation_agent]
+loc2(1)[warehouse_automation_agent]
+loc3(2)[warehouse_automation_agent]
+loc4(3)[warehouse_automation_agent]
+loc5(4)[warehouse_automation_agent]
+loc6(5)[warehouse_automation_agent]
+loc7(6)[warehouse_automation_agent]
+loc8(7)[warehouse_automation_agent]
+loc9(8)[warehouse_automation_agent]
+loc18(17)[warehouse_automation_agent]
+loc10(9)[warehouse_automation_agent]
+loc11(10)[warehouse_automation_agent]
+loc12(11)[warehouse_automation_agent]
+loc13(12)[warehouse_automation_agent]
+loc14(13)[warehouse_automation_agent]
+loc15(14)[warehouse_automation_agent]
+loc16(15)[warehouse_automation_agent]
+loc17(16)[warehouse_automation_agent]
+loc19(18)[warehouse_automation_agent]
+loc20(19)[warehouse_automation_agent]
+
+labels:initial$0
+labels:target$0
+*******************Automaton Information*********************
+Automaton:warehouse_automation_agent[0]
+variable:x1[0][null]
+variable:x2[1][null]
+variable:c[2][null]
+State:
+loc1,0
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e1[warehouse_automation_agent]
+e3[warehouse_automation_agent]
+Pre:
+e2[warehouse_automation_agent]
+e4[warehouse_automation_agent]
+
+State:
+loc2,1
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e2[warehouse_automation_agent]
+e5[warehouse_automation_agent]
+e7[warehouse_automation_agent]
+Pre:
+e1[warehouse_automation_agent]
+e6[warehouse_automation_agent]
+e8[warehouse_automation_agent]
+
+State:
+loc3,2
+Invariants:
+( x1[0][null] >= 2 )
+( x1[0][null] <= 3 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e6[warehouse_automation_agent]
+e9[warehouse_automation_agent]
+e11[warehouse_automation_agent]
+Pre:
+e5[warehouse_automation_agent]
+e10[warehouse_automation_agent]
+e12[warehouse_automation_agent]
+
+State:
+loc4,3
+Invariants:
+( x1[0][null] >= 3 )
+( x1[0][null] <= 4 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e10[warehouse_automation_agent]
+e13[warehouse_automation_agent]
+Pre:
+e9[warehouse_automation_agent]
+e14[warehouse_automation_agent]
+
+State:
+loc5,4
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -2 )
+Next:
+e4[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e17[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+Pre:
+e3[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e18[warehouse_automation_agent]
+
+State:
+loc6,5
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e8[warehouse_automation_agent]
+e16[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e21[warehouse_automation_agent]
+Pre:
+e7[warehouse_automation_agent]
+e15[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e22[warehouse_automation_agent]
+
+State:
+loc7,6
+Invariants:
+( x1[0][null] >= 2 )
+( x1[0][null] <= 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e12[warehouse_automation_agent]
+e20[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+e25[warehouse_automation_agent]
+Pre:
+e11[warehouse_automation_agent]
+e19[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+e26[warehouse_automation_agent]
+
+State:
+loc8,7
+Invariants:
+( x1[0][null] >= 3 )
+( x1[0][null] <= 4 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e14[warehouse_automation_agent]
+e24[warehouse_automation_agent]
+Pre:
+e13[warehouse_automation_agent]
+e23[warehouse_automation_agent]
+
+State:
+loc9,8
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 2 )
+( x2[1][null] <= 3 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e18[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e29[warehouse_automation_agent]
+Pre:
+e17[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e30[warehouse_automation_agent]
+
+State:
+loc10,9
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 2 )
+( x2[1][null] <= 3 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e22[warehouse_automation_agent]
+e28[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e33[warehouse_automation_agent]
+Pre:
+e21[warehouse_automation_agent]
+e27[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e34[warehouse_automation_agent]
+
+State:
+loc11,10
+Invariants:
+( x1[0][null] >= 2 )
+( x1[0][null] <= 3 )
+( x2[1][null] >= 2 )
+( x2[1][null] <= 3 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = 0 )
+Next:
+e26[warehouse_automation_agent]
+e32[warehouse_automation_agent]
+e35[warehouse_automation_agent]
+Pre:
+e25[warehouse_automation_agent]
+e31[warehouse_automation_agent]
+e36[warehouse_automation_agent]
+
+State:
+loc12,11
+Invariants:
+( x1[0][null] >= 3 )
+( x1[0][null] <= 4 )
+( x2[1][null] >= 2 )
+( x2[1][null] <= 3 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
+( c[2][null]' = -1 )
+Next:
+Pre:
+
+State:
+loc13,12
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 3 )
+( x2[1][null] <= 4 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e30[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e39[warehouse_automation_agent]
+Pre:
+e29[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+e40[warehouse_automation_agent]
+
+State:
+loc14,13
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 3 )
+( x2[1][null] <= 4 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e34[warehouse_automation_agent]
+e38[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e43[warehouse_automation_agent]
+Pre:
+e33[warehouse_automation_agent]
+e37[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e44[warehouse_automation_agent]
+
+State:
+loc15,14
+Invariants:
+( x1[0][null] >= 2 )
+( x1[0][null] <= 3 )
+( x2[1][null] >= 3 )
+( x2[1][null] <= 4 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e36[warehouse_automation_agent]
+e42[warehouse_automation_agent]
+e45[warehouse_automation_agent]
+Pre:
+e35[warehouse_automation_agent]
+e41[warehouse_automation_agent]
+e46[warehouse_automation_agent]
+
+State:
+loc16,15
+Invariants:
+( x1[0][null] >= 3 )
+( x1[0][null] <= 4 )
+( x2[1][null] >= 3 )
+( x2[1][null] <= 4 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -2 )
+Next:
+e46[warehouse_automation_agent]
+Pre:
+e45[warehouse_automation_agent]
+initial$0[warehouse_automation_agent]
+
+State:
+loc17,16
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 4 )
+( x2[1][null] <= 5 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e40[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+Pre:
+e39[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+
+State:
+loc18,17
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 4 )
+( x2[1][null] <= 5 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e44[warehouse_automation_agent]
+e48[warehouse_automation_agent]
+Pre:
+e43[warehouse_automation_agent]
+e47[warehouse_automation_agent]
+
+State:
+loc19,18
+Invariants:
+( x1[0][null] >= 2 )
+( x1[0][null] <= 3 )
+( x2[1][null] >= 4 )
+( x2[1][null] <= 5 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
+( c[2][null]' = -1 )
+Next:
+Pre:
+
+State:
+loc20,19
+Invariants:
+( x1[0][null] >= 3 )
+( x1[0][null] <= 4 )
+( x2[1][null] >= 4 )
+( x2[1][null] <= 5 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
+( c[2][null]' = -1 )
+Next:
+Pre:
+
+State:
+warehouse_automation_agent$initial,20
+Invariants:
+Flows:
+Next:
+initial$0[warehouse_automation_agent]
+Pre:
+
+State:
+warehouse_automation_agent$target,21
+Invariants:
+Flows:
+Next:
+Pre:
+target$0[warehouse_automation_agent]
+
+Transition:
+e1(loc1->loc2)
+ID:0
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 0 )
+( x2[1][null] < 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e2(loc2->loc1)
+ID:1
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 0 )
+( x2[1][null] < 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e3(loc1->loc5)
+ID:2
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e4(loc5->loc1)
+ID:3
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e5(loc2->loc3)
+ID:4
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 0 )
+( x2[1][null] < 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e6(loc3->loc2)
+ID:5
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 0 )
+( x2[1][null] < 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e7(loc2->loc6)
+ID:6
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e8(loc6->loc2)
+ID:7
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e9(loc3->loc4)
+ID:8
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 0 )
+( x2[1][null] < 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e10(loc4->loc3)
+ID:9
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 0 )
+( x2[1][null] < 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e11(loc3->loc7)
+ID:10
+Guards:
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e12(loc7->loc3)
+ID:11
+Guards:
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e13(loc4->loc8)
+ID:12
+Guards:
+( x1[0][null] >= 3 )
+( x1[0][null] < 4 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e14(loc8->loc4)
+ID:13
+Guards:
+( x1[0][null] >= 3 )
+( x1[0][null] < 4 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e15(loc5->loc6)
+ID:14
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e16(loc6->loc5)
+ID:15
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e17(loc5->loc9)
+ID:16
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e18(loc9->loc5)
+ID:17
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e19(loc6->loc7)
+ID:18
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e20(loc7->loc6)
+ID:19
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e21(loc6->loc10)
+ID:20
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e22(loc10->loc6)
+ID:21
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e23(loc7->loc8)
+ID:22
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e24(loc8->loc7)
+ID:23
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] < 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e25(loc7->loc11)
+ID:24
+Guards:
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e26(loc11->loc7)
+ID:25
+Guards:
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e27(loc9->loc10)
+ID:26
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 2 )
+( x2[1][null] < 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e28(loc10->loc9)
+ID:27
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 2 )
+( x2[1][null] < 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e29(loc9->loc13)
+ID:28
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e30(loc13->loc9)
+ID:29
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e31(loc10->loc11)
+ID:30
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 2 )
+( x2[1][null] < 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e32(loc11->loc10)
+ID:31
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 2 )
+( x2[1][null] < 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e33(loc10->loc14)
+ID:32
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e34(loc14->loc10)
+ID:33
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e35(loc11->loc15)
+ID:34
+Guards:
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 3 )
+Resets:
+( c[2][null]' = 10 )
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+
+Transition:
+e36(loc15->loc11)
+ID:35
+Guards:
+( x1[0][null] >= 2 )
+( x1[0][null] < 3 )
+( x2[1][null] = 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e37(loc13->loc14)
+ID:36
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e38(loc14->loc13)
+ID:37
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e39(loc13->loc17)
+ID:38
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e40(loc17->loc13)
+ID:39
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] < 1 )
+( x2[1][null] = 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e41(loc14->loc15)
+ID:40
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e42(loc15->loc14)
+ID:41
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e43(loc14->loc18)
+ID:42
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e44(loc18->loc14)
+ID:43
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] < 2 )
+( x2[1][null] = 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e45(loc15->loc16)
+ID:44
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e46(loc16->loc15)
+ID:45
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 3 )
+( x2[1][null] < 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e47(loc17->loc18)
+ID:46
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 4 )
+( x2[1][null] < 5 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e48(loc18->loc17)
+ID:47
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 4 )
+( x2[1][null] < 5 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+initial$0(warehouse_automation_agent$initial->loc16)
+ID:48
+Guards:
+( x1[0][null] = 3.89684 )
+( x2[1][null] = 3.24192 )
+( c[2][null] = 3 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+target$0(loc5->warehouse_automation_agent$target)
+ID:49
+Guards:
+Resets:
+
+related automata:
+warehouse_automation_agent
+
+init spec:
+( true && LOC( warehouse_automation_agent ) = warehouse_automation_agent$initial )
+reach spec:
+( true && LOC( warehouse_automation_agent ) = warehouse_automation_agent$target )
+
+------------main()------------src/main.cpp:99-----------------
+z3solver
+------------check()------------src/BMC/modelCheck.cpp:657-----------------
+
+Z3:Z3 4.5.1.0
+PATH no.1:
+warehouse_automation_agent:	warehouse_automation_agent$initial(20)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc16(15)[warehouse_automation_agent] -> e46[warehouse_automation_agent] ->	loc15(14)[warehouse_automation_agent] -> e42[warehouse_automation_agent] ->	loc14(13)[warehouse_automation_agent] -> e34[warehouse_automation_agent] ->	loc10(9)[warehouse_automation_agent] -> e22[warehouse_automation_agent] ->	loc6(5)[warehouse_automation_agent] -> e16[warehouse_automation_agent] ->	loc5(4)[warehouse_automation_agent] -> target$0[warehouse_automation_agent] ->	warehouse_automation_agent$target(21)[warehouse_automation_agent]
+
+unsat
+
+IIS Path Segment:
+warehouse_automation_agent:	warehouse_automation_agent$initial(20)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc16(15)[warehouse_automation_agent] -> e46[warehouse_automation_agent] ->	loc15(14)[warehouse_automation_agent] -> e42[warehouse_automation_agent] ->	loc14(13)[warehouse_automation_agent] -> e34[warehouse_automation_agent] ->	loc10(9)[warehouse_automation_agent] -> e22[warehouse_automation_agent] ->	loc6(5)[warehouse_automation_agent]
+
+PATH no.2:
+warehouse_automation_agent:	warehouse_automation_agent$initial(20)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc16(15)[warehouse_automation_agent] -> e46[warehouse_automation_agent] ->	loc15(14)[warehouse_automation_agent] -> e36[warehouse_automation_agent] ->	loc11(10)[warehouse_automation_agent] -> e26[warehouse_automation_agent] ->	loc7(6)[warehouse_automation_agent] -> e20[warehouse_automation_agent] ->	loc6(5)[warehouse_automation_agent] -> e16[warehouse_automation_agent] ->	loc5(4)[warehouse_automation_agent] -> target$0[warehouse_automation_agent] ->	warehouse_automation_agent$target(21)[warehouse_automation_agent]
+
+sat
+REACHABLE
+2 paths were checked
+WITNESS:
+warehouse_automation_agent:	warehouse_automation_agent$initial(20)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc16(15)[warehouse_automation_agent] -> e46[warehouse_automation_agent] ->	loc15(14)[warehouse_automation_agent] -> e36[warehouse_automation_agent] ->	loc11(10)[warehouse_automation_agent] -> e26[warehouse_automation_agent] ->	loc7(6)[warehouse_automation_agent] -> e20[warehouse_automation_agent] ->	loc6(5)[warehouse_automation_agent] -> e16[warehouse_automation_agent] ->	loc5(4)[warehouse_automation_agent] -> target$0[warehouse_automation_agent] ->	warehouse_automation_agent$target(21)[warehouse_automation_agent]
+Time of Encoding Graph: 0.030899 s
+Time of Searching Path: 0.096771 s
+Time of Decoding  Path: 0.000493 s
+Time of Checking  Path: 0.014120 s
+Time of Refining Model: 0.059187 s
+Memory used: 69.00 MB
+CPU Time: 0.211195 s

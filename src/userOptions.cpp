@@ -9,6 +9,7 @@ userOptions::userOptions() {
     numOilSpills = 2; // Default number of oil spill locations
     numChargingStations = 1; // Default number of charging stations
     numUnsatModels = 1; // Default number of unsat model files required
+    numSatModels = 0;
 }
 
 // Getters and setters for each option
@@ -67,12 +68,20 @@ void userOptions::setNumUnsatModels(unsigned int num) {
     numUnsatModels = num;
 }
 
+unsigned int userOptions::getNumSatModels() const {
+    return numSatModels;
+}
+
+void userOptions::setNumSatModels(unsigned int num) {
+    numSatModels = num;
+}
+
 unsigned int userOptions::getDepth() const {
     return depth;
 }
 
-void userOptions::setDepth(unsigned int depth) {
-    depth = depth;
+void userOptions::setDepth(unsigned int dpt) {
+    depth = dpt;
 }
 
 userOptions::~userOptions() {

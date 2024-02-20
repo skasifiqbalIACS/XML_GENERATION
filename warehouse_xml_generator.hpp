@@ -31,6 +31,7 @@ public:
 private:
     int rowSize, colSize;
     int numType1, numType2, numType3;
+    int depth, startingCharge;
     std::map<int, SpecialLocationType> specialLocations;
 
     void AddParameters(tinyxml2::XMLNode* component, int numVariables, int numTransitions);
