@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="warehouse_automation_agent">
+    <param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="c" type="real" local="false" d1="1" d2="1" dynamics="any" />
+<param name="z" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="e12001" type="label" local="false" />
+    <location id="7001" name="loc7001">
+      <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'==z &amp; x2'==z &amp; c'==-1</flow>
+    </location>
+    <location id="1002" name="loc1002">
+      <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+      <flow>x1'==z &amp; x2'==z &amp; c'==-1</flow>
+    </location>
+    <transition source="7001" target="1002">
+      <label>e12001</label>
+      <guard>x1&gt;=0 &amp; x1&lt;=1 &amp; x2==1</guard>
+
+    </transition>
+  </component>
+</sspaceex>

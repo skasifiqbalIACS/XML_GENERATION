@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="warehouse_automation_agent">
+    <param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="c" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="e12001" type="label" local="false" />
+    <param name="e1002" type="label" local="false" />
+    <param name="e4003" type="label" local="false" />
+    <param name="e17004" type="label" local="false" />
+    <param name="e20005" type="label" local="false" />
+    <param name="e23006" type="label" local="false" />
+    <param name="e27007" type="label" local="false" />
+    <param name="e31008" type="label" local="false" />
+    <location id="7001" name="loc7001">
+      <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="1002" name="loc1002">
+      <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="2003" name="loc2003">
+      <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="8004" name="loc8004">
+      <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="9005" name="loc9005">
+      <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="10006" name="loc10006">
+      <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; </invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-2</flow>
+    </location>
+    <location id="11007" name="loc11007">
+      <invariant>x1&gt;=4 &amp; x1&lt;=5 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; </invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="12008" name="loc12008">
+      <invariant>x1&gt;=5 &amp; x1&lt;=6 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="18009" name="loc18009">
+      <invariant>x1&gt;=5 &amp; x1&lt;=6 &amp; x2&gt;=2 &amp; x2&lt;=3 &amp; c&gt;=0.1</invariant>
+      <flow>x1'==0 &amp; x2'==0 &amp; c'==0</flow>
+    </location>
+    <transition source="7001" target="1002">
+      <label>e12001</label>
+      <guard>x1&gt;=0 &amp; x1&lt;=1 &amp; x2==1</guard>
+
+    </transition>
+    <transition source="1002" target="2003">
+      <label>e1002</label>
+      <guard>x1==1 &amp; x2&gt;=0 &amp; x2&lt;=1</guard>
+
+    </transition>
+    <transition source="2003" target="8004">
+      <label>e4003</label>
+      <guard>x1&gt;=1 &amp; x1&lt;=2 &amp; x2==1</guard>
+
+    </transition>
+    <transition source="8004" target="9005">
+      <label>e17004</label>
+      <guard>x1==2 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="9005" target="10006">
+      <label>e20005</label>
+      <guard>x1==3 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="10006" target="11007">
+      <label>e23006</label>
+      <guard>x1==4 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="11007" target="12008">
+      <label>e27007</label>
+      <guard>x1==5 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="12008" target="18009">
+      <label>e31008</label>
+      <guard>x1&gt;=5 &amp; x1&lt;=6 &amp; x2==2</guard>
+
+    </transition>
+  </component>
+</sspaceex>

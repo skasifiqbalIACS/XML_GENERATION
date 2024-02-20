@@ -1,0 +1,10 @@
+g++ -o grid_xml_generator grid_xml_generator.cpp
+
+
+./grid_xml_generator 
+
+
+g++ -o warehouse_xml_generator warehouse_xml_generator.cpp -L../tinyxml2-master -ltinyxml2
+
+g++ -o warehouse_xml_generator warehouse_xml_generator.cpp -I"home/asif/XML generation/tinyxml2-master/tinyxml2-master" -L"home/asif/XML generation/tinyxml2-master/tinyxml2-master" -ltinyxml2 -Wl,-rpath,../tinyxml2-master
+

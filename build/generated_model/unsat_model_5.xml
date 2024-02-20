@@ -1,0 +1,353 @@
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+    <component id="warehouse_automation_agent">
+        <param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any"/>
+        <param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any"/>
+        <param name="c" type="real" local="false" d1="1" d2="1" dynamics="any"/>
+        <!-- Transition Parameters -->
+        <param name="e1" type="label" local="false"/>
+        <param name="e2" type="label" local="false"/>
+        <param name="e3" type="label" local="false"/>
+        <param name="e4" type="label" local="false"/>
+        <param name="e5" type="label" local="false"/>
+        <param name="e6" type="label" local="false"/>
+        <param name="e7" type="label" local="false"/>
+        <param name="e8" type="label" local="false"/>
+        <param name="e9" type="label" local="false"/>
+        <param name="e10" type="label" local="false"/>
+        <param name="e11" type="label" local="false"/>
+        <param name="e12" type="label" local="false"/>
+        <param name="e13" type="label" local="false"/>
+        <param name="e14" type="label" local="false"/>
+        <param name="e15" type="label" local="false"/>
+        <param name="e16" type="label" local="false"/>
+        <param name="e17" type="label" local="false"/>
+        <param name="e18" type="label" local="false"/>
+        <param name="e19" type="label" local="false"/>
+        <param name="e20" type="label" local="false"/>
+        <param name="e21" type="label" local="false"/>
+        <param name="e22" type="label" local="false"/>
+        <param name="e23" type="label" local="false"/>
+        <param name="e24" type="label" local="false"/>
+        <param name="e25" type="label" local="false"/>
+        <param name="e26" type="label" local="false"/>
+        <param name="e27" type="label" local="false"/>
+        <param name="e28" type="label" local="false"/>
+        <param name="e29" type="label" local="false"/>
+        <param name="e30" type="label" local="false"/>
+        <param name="e31" type="label" local="false"/>
+        <param name="e32" type="label" local="false"/>
+        <param name="e33" type="label" local="false"/>
+        <param name="e34" type="label" local="false"/>
+        <param name="e35" type="label" local="false"/>
+        <param name="e36" type="label" local="false"/>
+        <param name="e37" type="label" local="false"/>
+        <param name="e38" type="label" local="false"/>
+        <param name="e39" type="label" local="false"/>
+        <param name="e40" type="label" local="false"/>
+        <param name="e41" type="label" local="false"/>
+        <param name="e42" type="label" local="false"/>
+        <param name="e43" type="label" local="false"/>
+        <param name="e44" type="label" local="false"/>
+        <param name="e45" type="label" local="false"/>
+        <param name="e46" type="label" local="false"/>
+        <param name="e47" type="label" local="false"/>
+        <param name="e48" type="label" local="false"/>
+        <param name="e49" type="label" local="false"/>
+        <param name="e50" type="label" local="false"/>
+        <param name="e51" type="label" local="false"/>
+        <param name="e52" type="label" local="false"/>
+        <param name="e53" type="label" local="false"/>
+        <param name="e54" type="label" local="false"/>
+        <param name="e55" type="label" local="false"/>
+        <param name="e56" type="label" local="false"/>
+        <param name="e57" type="label" local="false"/>
+        <param name="e58" type="label" local="false"/>
+        <param name="e59" type="label" local="false"/>
+        <param name="e60" type="label" local="false"/>
+<location id="1" name="loc1"><invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="2" name="loc2">
+            <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+            <!--Oil Spill-->
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-2</flow>
+        </location>
+        <location id="3" name="loc3">
+            <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="4" name="loc4">
+            <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=0 &amp; x2&lt;=1 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="5" name="loc5">
+            <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="6" name="loc6">
+            <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="7" name="loc7">
+            <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+            <!--Barrier-->
+            <flow>x1'==0 &amp; x2'==0 &amp; c'==-1</flow>
+        </location>
+        <location id="8" name="loc8">
+            <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+            <!--Barrier-->
+            <flow>x1'==0 &amp; x2'==0 &amp; c'==-1</flow>
+        </location>
+        <location id="9" name="loc9">
+            <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=2 &amp; x2&lt;=3 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="10" name="loc10">
+            <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=2 &amp; x2&lt;=3 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="11" name="loc11">
+            <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=2 &amp; x2&lt;=3 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="12" name="loc12">
+            <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=2 &amp; x2&lt;=3 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="13" name="loc13">
+            <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=3 &amp; x2&lt;=4 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="14" name="loc14">
+            <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=3 &amp; x2&lt;=4 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="15" name="loc15">
+            <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=3 &amp; x2&lt;=4 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="16" name="loc16">
+            <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=3 &amp; x2&lt;=4 &amp; c&gt;=0.1</invariant>
+            <!--Oil Spill-->
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-2</flow>
+        </location>
+        <location id="17" name="loc17">
+            <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=4 &amp; x2&lt;=5 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="18" name="loc18">
+            <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=4 &amp; x2&lt;=5 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+        <location id="19" name="loc19">
+            <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=4 &amp; x2&lt;=5 &amp; c&gt;=0.1</invariant>
+            <!--Charging Location-->
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==0</flow>
+        </location>
+        <location id="20" name="loc20">
+            <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=4 &amp; x2&lt;=5 &amp; c&gt;=0.1</invariant>
+            <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+        </location>
+
+<transition source="1" target="2"><label>e1</label>
+            <guard>x1==0 &amp; x2&gt;=0 &amp; x2&lt;1</guard>
+        </transition>
+        <transition source="2" target="1">
+            <label>e2</label>
+            <guard>x1==1 &amp; x2&gt;=0 &amp; x2&lt;1</guard>
+        </transition>
+        <transition source="1" target="5">
+            <label>e3</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==0</guard>
+        </transition>
+        <transition source="5" target="1">
+            <label>e4</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==1</guard>
+        </transition>
+        <transition source="2" target="3">
+            <label>e5</label>
+            <guard>x1==1 &amp; x2&gt;=0 &amp; x2&lt;1</guard>
+        </transition>
+        <transition source="3" target="2">
+            <label>e6</label>
+            <guard>x1==2 &amp; x2&gt;=0 &amp; x2&lt;1</guard>
+        </transition>
+        <transition source="2" target="6">
+            <label>e7</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==0</guard>
+        </transition>
+        <transition source="6" target="2">
+            <label>e8</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==1</guard>
+        </transition>
+        <transition source="3" target="4">
+            <label>e9</label>
+            <guard>x1==2 &amp; x2&gt;=0 &amp; x2&lt;1</guard>
+        </transition>
+        <transition source="4" target="3">
+            <label>e10</label>
+            <guard>x1==3 &amp; x2&gt;=0 &amp; x2&lt;1</guard>
+        </transition>
+        <transition source="5" target="6">
+            <label>e11</label>
+            <guard>x1==0 &amp; x2&gt;=1 &amp; x2&lt;2</guard>
+        </transition>
+        <transition source="6" target="5">
+            <label>e12</label>
+            <guard>x1==1 &amp; x2&gt;=1 &amp; x2&lt;2</guard>
+        </transition>
+        <transition source="5" target="9">
+            <label>e13</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==1</guard>
+        </transition>
+        <transition source="9" target="5">
+            <label>e14</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==2</guard>
+        </transition>
+        <transition source="6" target="10">
+            <label>e15</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==1</guard>
+        </transition>
+        <transition source="10" target="6">
+            <label>e16</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==2</guard>
+        </transition>
+        <transition source="9" target="10">
+            <label>e17</label>
+            <guard>x1==0 &amp; x2&gt;=2 &amp; x2&lt;3</guard>
+        </transition>
+        <transition source="10" target="9">
+            <label>e18</label>
+            <guard>x1==1 &amp; x2&gt;=2 &amp; x2&lt;3</guard>
+        </transition>
+        <transition source="9" target="13">
+            <label>e19</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==2</guard>
+        </transition>
+        <transition source="13" target="9">
+            <label>e20</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==3</guard>
+        </transition>
+        <transition source="10" target="11">
+            <label>e21</label>
+            <guard>x1==1 &amp; x2&gt;=2 &amp; x2&lt;3</guard>
+        </transition>
+        <transition source="11" target="10">
+            <label>e22</label>
+            <guard>x1==2 &amp; x2&gt;=2 &amp; x2&lt;3</guard>
+        </transition>
+        <transition source="10" target="14">
+            <label>e23</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==2</guard>
+        </transition>
+        <transition source="14" target="10">
+            <label>e24</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==3</guard>
+        </transition>
+        <transition source="11" target="12">
+            <label>e25</label>
+            <guard>x1==2 &amp; x2&gt;=2 &amp; x2&lt;3</guard>
+        </transition>
+        <transition source="12" target="11">
+            <label>e26</label>
+            <guard>x1==3 &amp; x2&gt;=2 &amp; x2&lt;3</guard>
+        </transition>
+        <transition source="11" target="15">
+            <label>e27</label>
+            <guard>x1&gt;=2 &amp; x1&lt;3 &amp; x2==2</guard>
+        </transition>
+        <transition source="15" target="11">
+            <label>e28</label>
+            <guard>x1&gt;=2 &amp; x1&lt;3 &amp; x2==3</guard>
+        </transition>
+        <transition source="12" target="16">
+            <label>e29</label>
+            <guard>x1&gt;=3 &amp; x1&lt;4 &amp; x2==2</guard>
+        </transition>
+        <transition source="16" target="12">
+            <label>e30</label>
+            <guard>x1&gt;=3 &amp; x1&lt;4 &amp; x2==3</guard>
+        </transition>
+        <transition source="13" target="14">
+            <label>e31</label>
+            <guard>x1==0 &amp; x2&gt;=3 &amp; x2&lt;4</guard>
+        </transition>
+        <transition source="14" target="13">
+            <label>e32</label>
+            <guard>x1==1 &amp; x2&gt;=3 &amp; x2&lt;4</guard>
+        </transition>
+        <transition source="13" target="17">
+            <label>e33</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==3</guard>
+        </transition>
+        <transition source="17" target="13">
+            <label>e34</label>
+            <guard>x1&gt;=0 &amp; x1&lt;1 &amp; x2==4</guard>
+        </transition>
+        <transition source="14" target="15">
+            <label>e35</label>
+            <guard>x1==1 &amp; x2&gt;=3 &amp; x2&lt;4</guard>
+        </transition>
+        <transition source="15" target="14">
+            <label>e36</label>
+            <guard>x1==2 &amp; x2&gt;=3 &amp; x2&lt;4</guard>
+        </transition>
+        <transition source="14" target="18">
+            <label>e37</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==3</guard>
+        </transition>
+        <transition source="18" target="14">
+            <label>e38</label>
+            <guard>x1&gt;=1 &amp; x1&lt;2 &amp; x2==4</guard>
+        </transition>
+        <transition source="15" target="16">
+            <label>e39</label>
+            <guard>x1==2 &amp; x2&gt;=3 &amp; x2&lt;4</guard>
+        </transition>
+        <transition source="16" target="15">
+            <label>e40</label>
+            <guard>x1==3 &amp; x2&gt;=3 &amp; x2&lt;4</guard>
+        </transition>
+        <transition source="15" target="19">
+            <label>e41</label>
+            <guard>x1&gt;=2 &amp; x1&lt;3 &amp; x2==3</guard>
+        </transition>
+        <transition source="19" target="15">
+            <label>e42</label>
+            <guard>x1&gt;=2 &amp; x1&lt;3 &amp; x2==4</guard>
+        </transition>
+        <transition source="16" target="20">
+            <label>e43</label>
+            <guard>x1&gt;=3 &amp; x1&lt;4 &amp; x2==3</guard>
+        </transition>
+        <transition source="20" target="16">
+            <label>e44</label>
+            <guard>x1&gt;=3 &amp; x1&lt;4 &amp; x2==4</guard>
+        </transition>
+        <transition source="17" target="18">
+            <label>e45</label>
+            <guard>x1==0 &amp; x2&gt;=4 &amp; x2&lt;5</guard>
+        </transition>
+        <transition source="18" target="17">
+            <label>e46</label>
+            <guard>x1==1 &amp; x2&gt;=4 &amp; x2&lt;5</guard>
+        </transition>
+        <transition source="18" target="19">
+            <label>e47</label>
+            <guard>x1==1 &amp; x2&gt;=4 &amp; x2&lt;5</guard>
+        </transition>
+        <transition source="19" target="18">
+            <label>e48</label>
+            <guard>x1==2 &amp; x2&gt;=4 &amp; x2&lt;5</guard>
+        </transition>
+        <transition source="19" target="20">
+            <label>e49</label>
+            <guard>x1==2 &amp; x2&gt;=4 &amp; x2&lt;5</guard>
+            <assignment>c:=10</assignment>
+        </transition>
+        <transition source="20" target="19">
+            <label>e50</label>
+            <guard>x1==3 &amp; x2&gt;=4 &amp; x2&lt;5</guard>
+        </transition>
+    </component>
+</sspaceex>

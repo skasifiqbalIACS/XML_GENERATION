@@ -1,0 +1,32 @@
+This directory contains the benchmark instances, the script and executables used in the experimental evaluation.
+
+    BACH: a Bounded reAchability CHecker for linear hybrid automata.
+
+The directory structure is as follows:
+
+bach 
+    the binary of BACH
+
+lib/
+    contains the library files needed to run BACH
+
+benchmarks/
+    contains the benchmark instances for compositional hybrid automata in spaceEx formats
+
+    benchmarks/run_interaction.py
+        the script to run the experiment
+
+    benchmarks/result_interaction/ 
+        is the output directory with results of running the benchmarks
+
+For reproducing the results of the competition, the script "run_interaction.py" should be run *FROM benchmarks/ directory*.
+Before running run_interaction.py you have to make sure "runlim" is installed.
+If not, use the following command to install:
+    sudo apt-get install runlim
+
+The time limit for experiments is set to 1000 s, and the memory usage limit is set to 4 GB.
+All experiments will take about 10 mininutes.
+
+To use the BACH tool directly, with given input xml and cfg files in spaceEx formats, please refer to the manual by running:
+	./bach --help
+

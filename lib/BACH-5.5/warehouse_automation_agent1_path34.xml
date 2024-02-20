@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="warehouse_automation_agent">
+    <param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="c" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="e13001" type="label" local="false" />
+    <param name="e17002" type="label" local="false" />
+    <param name="e20003" type="label" local="false" />
+    <param name="e23004" type="label" local="false" />
+    <param name="e27005" type="label" local="false" />
+    <param name="e31006" type="label" local="false" />
+    <location id="7001" name="loc7001">
+      <invariant>x1&gt;=0 &amp; x1&lt;=1 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="8002" name="loc8002">
+      <invariant>x1&gt;=1 &amp; x1&lt;=2 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="9003" name="loc9003">
+      <invariant>x1&gt;=2 &amp; x1&lt;=3 &amp; x2&gt;=1 &amp; x2&lt;=2 &amp; c&gt;=0.1</invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="10004" name="loc10004">
+      <invariant>x1&gt;=3 &amp; x1&lt;=4 &amp; x2&gt;=1 &amp; x2&lt;=2  </invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-2</flow>
+    </location>
+    <location id="11005" name="loc11005">
+      <invariant>x1&gt;=4 &amp; x1&lt;=5 &amp; x2&gt;=1 &amp; x2&lt;=2 </invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="12006" name="loc12006">
+      <invariant>x1&gt;=5 &amp; x1&lt;=6 &amp; x2&gt;=1 &amp; x2&lt;=2 </invariant>
+      <flow>x1'&gt;=-1 &amp; x1'&lt;=1 &amp; x2'&gt;=-1 &amp; x2'&lt;=1 &amp; c'==-1</flow>
+    </location>
+    <location id="18007" name="loc18007">
+      <invariant>x1&gt;=5 &amp; x1&lt;=6 &amp; x2&gt;=2 &amp; x2&lt;=3 </invariant>
+      <flow>x1'==0 &amp; x2'==0 &amp; c'==0</flow>
+    </location>
+    <transition source="7001" target="8002">
+      <label>e13001</label>
+      <guard>x1==1 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="8002" target="9003">
+      <label>e17002</label>
+      <guard>x1==2 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="9003" target="10004">
+      <label>e20003</label>
+      <guard>x1==3 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="10004" target="11005">
+      <label>e23004</label>
+      <guard>x1==4 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="11005" target="12006">
+      <label>e27005</label>
+      <guard>x1==5 &amp; x2&gt;=1 &amp; x2&lt;=2</guard>
+
+    </transition>
+    <transition source="12006" target="18007">
+      <label>e31006</label>
+      <guard>x1&gt;=5 &amp; x1&lt;=6 &amp; x2==2</guard>
+
+    </transition>
+  </component>
+</sspaceex>

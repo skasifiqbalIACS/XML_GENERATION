@@ -1,0 +1,8 @@
+/home/asif/BACH-5.5/bach -t -p -v2 -solver cmsat -semantics mixed warehouse_automation_agent1_path1.xml warehouse_automation_agent1_path1.cfg 20 > warehouse_automation_agent1_path1BACH.log
+
+/home/asif/BACH-5.5/bach -t -p -v2 -solver cmsat -semantics mixed warehouse_automation_agent1_path34.xml warehouse_automation_agent1_path34.cfg 20 > warehouse_automation_agent1_path34BACH.log
+
+
+/home/asif/BACH-5.5/bach -t -p -v2 -solver cmsat -semantics mixed output.xml output.cfg 20 > output.log
+
+/home/asif/BACH-5.5/bach -t -p -v2 -solver cmsat -semantics mixed unsat_model_192.xml unsat_model_192.cfg 20 > unsat_model_192.log

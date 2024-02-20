@@ -1,0 +1,5 @@
+g++ -o grid_xml_generator grid_xml_generator.cpp
+
+
+./grid_xml_generator 
+

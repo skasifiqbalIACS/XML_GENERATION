@@ -1,0 +1,457 @@
+Model File : warehouse_automation_agent1_path1.xml
+Spec  File : warehouse_automation_agent1_path1.cfg
+Parsing XML...
+Parsing XML Success
+------------setReachSpec()------------src/automata/Automaton.cpp:451-----------------
+loc()==loc18009
+------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
+x1[0][null]
+------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
+x2[1][null]
+------------generateExtraTransition()------------src/automata/Automaton.cpp:580-----------------
+c[2][null]
+*******************ComposedAutomata Information*********************
+Automaton:warehouse_automation_agent
+variable:x1[0][null]
+variable:x2[1][null]
+variable:c[2][null]
+
+shared variable:x1[0]
+used Automaton:
+read Transition:
+initial$0[warehouse_automation_agent]
+e12001[warehouse_automation_agent]
+e1002[warehouse_automation_agent]
+e4003[warehouse_automation_agent]
+e17004[warehouse_automation_agent]
+e20005[warehouse_automation_agent]
+e23006[warehouse_automation_agent]
+e27007[warehouse_automation_agent]
+e31008[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+written Transition:
+used Transition:
+initial$0[warehouse_automation_agent]
+e12001[warehouse_automation_agent]
+e1002[warehouse_automation_agent]
+e4003[warehouse_automation_agent]
+e17004[warehouse_automation_agent]
+e20005[warehouse_automation_agent]
+e23006[warehouse_automation_agent]
+e27007[warehouse_automation_agent]
+e31008[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+read State:
+loc7001(0)[warehouse_automation_agent]
+loc1002(1)[warehouse_automation_agent]
+loc2003(2)[warehouse_automation_agent]
+loc8004(3)[warehouse_automation_agent]
+loc9005(4)[warehouse_automation_agent]
+loc10006(5)[warehouse_automation_agent]
+loc11007(6)[warehouse_automation_agent]
+loc12008(7)[warehouse_automation_agent]
+loc18009(8)[warehouse_automation_agent]
+
+shared variable:x2[1]
+used Automaton:
+read Transition:
+initial$0[warehouse_automation_agent]
+e12001[warehouse_automation_agent]
+e1002[warehouse_automation_agent]
+e4003[warehouse_automation_agent]
+e17004[warehouse_automation_agent]
+e20005[warehouse_automation_agent]
+e23006[warehouse_automation_agent]
+e27007[warehouse_automation_agent]
+e31008[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+written Transition:
+used Transition:
+initial$0[warehouse_automation_agent]
+e12001[warehouse_automation_agent]
+e1002[warehouse_automation_agent]
+e4003[warehouse_automation_agent]
+e17004[warehouse_automation_agent]
+e20005[warehouse_automation_agent]
+e23006[warehouse_automation_agent]
+e27007[warehouse_automation_agent]
+e31008[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+read State:
+loc7001(0)[warehouse_automation_agent]
+loc1002(1)[warehouse_automation_agent]
+loc2003(2)[warehouse_automation_agent]
+loc8004(3)[warehouse_automation_agent]
+loc9005(4)[warehouse_automation_agent]
+loc10006(5)[warehouse_automation_agent]
+loc11007(6)[warehouse_automation_agent]
+loc12008(7)[warehouse_automation_agent]
+loc18009(8)[warehouse_automation_agent]
+
+shared variable:c[2]
+used Automaton:
+read Transition:
+initial$0[warehouse_automation_agent]
+e12001[warehouse_automation_agent]
+e1002[warehouse_automation_agent]
+e4003[warehouse_automation_agent]
+e17004[warehouse_automation_agent]
+e20005[warehouse_automation_agent]
+e27007[warehouse_automation_agent]
+e31008[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+written Transition:
+used Transition:
+initial$0[warehouse_automation_agent]
+e12001[warehouse_automation_agent]
+e1002[warehouse_automation_agent]
+e4003[warehouse_automation_agent]
+e17004[warehouse_automation_agent]
+e20005[warehouse_automation_agent]
+e27007[warehouse_automation_agent]
+e31008[warehouse_automation_agent]
+target$0[warehouse_automation_agent]
+read State:
+loc7001(0)[warehouse_automation_agent]
+loc1002(1)[warehouse_automation_agent]
+loc2003(2)[warehouse_automation_agent]
+loc8004(3)[warehouse_automation_agent]
+loc9005(4)[warehouse_automation_agent]
+loc12008(7)[warehouse_automation_agent]
+loc18009(8)[warehouse_automation_agent]
+
+labels:initial$0
+labels:target$0
+*******************Automaton Information*********************
+Automaton:warehouse_automation_agent[0]
+variable:x1[0][null]
+variable:x2[1][null]
+variable:c[2][null]
+State:
+loc7001,0
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e12001[warehouse_automation_agent]
+Pre:
+initial$0[warehouse_automation_agent]
+
+State:
+loc1002,1
+Invariants:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e1002[warehouse_automation_agent]
+Pre:
+e12001[warehouse_automation_agent]
+
+State:
+loc2003,2
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e4003[warehouse_automation_agent]
+Pre:
+e1002[warehouse_automation_agent]
+
+State:
+loc8004,3
+Invariants:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e17004[warehouse_automation_agent]
+Pre:
+e4003[warehouse_automation_agent]
+
+State:
+loc9005,4
+Invariants:
+( x1[0][null] >= 2 )
+( x1[0][null] <= 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e20005[warehouse_automation_agent]
+Pre:
+e17004[warehouse_automation_agent]
+
+State:
+loc10006,5
+Invariants:
+( x1[0][null] >= 3 )
+( x1[0][null] <= 4 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -2 )
+Next:
+e23006[warehouse_automation_agent]
+Pre:
+e20005[warehouse_automation_agent]
+
+State:
+loc11007,6
+Invariants:
+( x1[0][null] >= 4 )
+( x1[0][null] <= 5 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e27007[warehouse_automation_agent]
+Pre:
+e23006[warehouse_automation_agent]
+
+State:
+loc12008,7
+Invariants:
+( x1[0][null] >= 5 )
+( x1[0][null] <= 6 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' >= -1 )
+( x1[0][null]' <= 1 )
+( x2[1][null]' >= -1 )
+( x2[1][null]' <= 1 )
+( c[2][null]' = -1 )
+Next:
+e31008[warehouse_automation_agent]
+Pre:
+e27007[warehouse_automation_agent]
+
+State:
+loc18009,8
+Invariants:
+( x1[0][null] >= 5 )
+( x1[0][null] <= 6 )
+( x2[1][null] >= 2 )
+( x2[1][null] <= 3 )
+( c[2][null] >= 0.1 )
+Flows:
+( x1[0][null]' = 0 )
+( x2[1][null]' = 0 )
+( c[2][null]' = 0 )
+Next:
+target$0[warehouse_automation_agent]
+Pre:
+e31008[warehouse_automation_agent]
+
+State:
+warehouse_automation_agent$initial,9
+Invariants:
+Flows:
+Next:
+initial$0[warehouse_automation_agent]
+Pre:
+
+State:
+warehouse_automation_agent$target,10
+Invariants:
+Flows:
+Next:
+Pre:
+target$0[warehouse_automation_agent]
+
+Transition:
+e12001(loc7001->loc1002)
+ID:0
+Guards:
+( x1[0][null] >= 0 )
+( x1[0][null] <= 1 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e1002(loc1002->loc2003)
+ID:1
+Guards:
+( x1[0][null] = 1 )
+( x2[1][null] >= 0 )
+( x2[1][null] <= 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e4003(loc2003->loc8004)
+ID:2
+Guards:
+( x1[0][null] >= 1 )
+( x1[0][null] <= 2 )
+( x2[1][null] = 1 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e17004(loc8004->loc9005)
+ID:3
+Guards:
+( x1[0][null] = 2 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e20005(loc9005->loc10006)
+ID:4
+Guards:
+( x1[0][null] = 3 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e23006(loc10006->loc11007)
+ID:5
+Guards:
+( x1[0][null] = 4 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e27007(loc11007->loc12008)
+ID:6
+Guards:
+( x1[0][null] = 5 )
+( x2[1][null] >= 1 )
+( x2[1][null] <= 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+e31008(loc12008->loc18009)
+ID:7
+Guards:
+( x1[0][null] >= 5 )
+( x1[0][null] <= 6 )
+( x2[1][null] = 2 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+initial$0(warehouse_automation_agent$initial->loc7001)
+ID:8
+Guards:
+( x1[0][null] = 0.5 )
+( x2[1][null] = 1.5 )
+( c[2][null] = 4 )
+Resets:
+( x1[0][null]' = x1[0][null] )
+( x2[1][null]' = x2[1][null] )
+( c[2][null]' = c[2][null] )
+
+Transition:
+target$0(loc18009->warehouse_automation_agent$target)
+ID:9
+Guards:
+Resets:
+
+related automata:
+warehouse_automation_agent
+
+init spec:
+( true && LOC( warehouse_automation_agent ) = warehouse_automation_agent$initial )
+reach spec:
+( true && LOC( warehouse_automation_agent ) = warehouse_automation_agent$target )
+
+------------main()------------src/main.cpp:99-----------------
+z3solver
+------------check()------------src/BMC/modelCheck.cpp:657-----------------
+
+Cryptominisat
+version:5.6.8
+PATH no.1:
+warehouse_automation_agent:	warehouse_automation_agent$initial(9)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc7001(0)[warehouse_automation_agent] -> e12001[warehouse_automation_agent] ->	loc1002(1)[warehouse_automation_agent] -> e1002[warehouse_automation_agent] ->	loc2003(2)[warehouse_automation_agent] -> e4003[warehouse_automation_agent] ->	loc8004(3)[warehouse_automation_agent] -> e17004[warehouse_automation_agent] ->	loc9005(4)[warehouse_automation_agent] -> e20005[warehouse_automation_agent] ->	loc10006(5)[warehouse_automation_agent] -> e23006[warehouse_automation_agent] ->	loc11007(6)[warehouse_automation_agent] -> e27007[warehouse_automation_agent] ->	loc12008(7)[warehouse_automation_agent] -> e31008[warehouse_automation_agent] ->	loc18009(8)[warehouse_automation_agent] -> target$0[warehouse_automation_agent] ->	warehouse_automation_agent$target(10)[warehouse_automation_agent]
+
+unsat
+
+IIS Path Segment:
+warehouse_automation_agent:	warehouse_automation_agent$initial(9)[warehouse_automation_agent] -> initial$0[warehouse_automation_agent] ->	loc7001(0)[warehouse_automation_agent] -> e12001[warehouse_automation_agent] ->	loc1002(1)[warehouse_automation_agent] -> e1002[warehouse_automation_agent] ->	loc2003(2)[warehouse_automation_agent] -> e4003[warehouse_automation_agent] ->	loc8004(3)[warehouse_automation_agent] -> e17004[warehouse_automation_agent] ->	loc9005(4)[warehouse_automation_agent] -> e20005[warehouse_automation_agent] ->	loc10006(5)[warehouse_automation_agent] -> e23006[warehouse_automation_agent] ->	loc11007(6)[warehouse_automation_agent] -> e27007[warehouse_automation_agent] ->	loc12008(7)[warehouse_automation_agent]
+
+UNREACHABLE
+1 paths were checked
+Time of Encoding Graph: 0.008311 s
+Time of Searching Path: 0.002273 s
+Time of Decoding  Path: 0.000163 s
+Time of Checking  Path: 0.010883 s
+Time of Refining Model: 0.000900 s
+Memory used: 53.00 MB
+CPU Time: 0.031775 s

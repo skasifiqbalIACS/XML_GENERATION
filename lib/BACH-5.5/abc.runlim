@@ -1,0 +1,25 @@
+[runlim] version:		1.10
+[runlim] time limit:		1000 seconds
+[runlim] real time limit:	1000 seconds
+[runlim] space limit:		4096 MB
+[runlim] argv[0]:		bach
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		-p
+[runlim] argv[3]:		-v2
+[runlim] argv[4]:		-solver
+[runlim] argv[5]:		cmsat
+[runlim] argv[6]:		-semantics
+[runlim] argv[7]:		mixed
+[runlim] argv[8]:		NAV_3_2.xml
+[runlim] argv[9]:		NAV_3_2.cfg
+[runlim] argv[10]:		20
+[runlim] start:			Sat Oct 14 00:48:10 2023
+[runlim] main pid:		35560
+[runlim] end:			Sat Oct 14 00:48:10 2023
+[runlim] status:		execvp failed
+[runlim] result:		1
+[runlim] children:		0
+[runlim] real:			0.51 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
