@@ -67,6 +67,9 @@
 			"compileCommandFragments" : 
 			[
 				{
+					"fragment" : "-g"
+				},
+				{
 					"fragment" : "-std=gnu++17"
 				}
 			],
@@ -83,6 +86,10 @@
 				{
 					"backtrace" : 3,
 					"define" : "BOOST_PROGRAM_OPTIONS_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "TINYXML2_DEBUG"
 				},
 				{
 					"backtrace" : 2,
@@ -136,6 +143,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
