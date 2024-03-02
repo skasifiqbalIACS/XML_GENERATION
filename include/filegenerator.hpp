@@ -5,6 +5,7 @@
 #include <string>
 #include <map>
 #include "warehouse_xml_generator.hpp" 
+#include "warehouse_xml_generator_deterministic.hpp"
 
 class UnsatFileGenerator {
 public:
@@ -26,7 +27,8 @@ private:
     int startingCharge; // Added starting charge 
 
     // Instance of warehouse_xml_generator to use its functionality
-    warehouse_xml_generator xmlGenerator;
+    warehouse_xml_generator baseXmlGenerator;
+    ModifiedWarehouseXmlGenerator derivedXmlGenerator;
 
     // Internal method to check the path's feasibility and handle file deletion or retention
     bool cH_Replay(const std::string& str);

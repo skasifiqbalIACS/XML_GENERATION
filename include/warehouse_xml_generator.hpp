@@ -23,14 +23,21 @@ enum class SpecialLocationType {
 class warehouse_xml_generator {
 public:
     //WarehouseSimulation(int rowSize, int colSize, int numType1, int numType2, int numType3);
-    void generateCfgFile(const std::map<int, SpecialLocationType>& specialLocations, const std::string& filename, int rowSize, int colSize, int startingCharge);
+    std::tuple<double, double, int, int> generateInitialSetup(const std::map<int, SpecialLocationType>& specialLocations, int rowSize, int colSize, int startingCharge);
+    
+    void virtual generateCfgFile(const std::tuple<double, double, int, int>& initialSetup, const std::string& filename, int startingCharge);
+
+    // virtual void generateCfgFile(const std::map<int, SpecialLocationType>& specialLocations, const std::string& filename, int rowSize, int colSize, int startingCharge);
     // void run(int rowSize, int colSize, int numType1, int numType2, int numType3);
     std::map<int, SpecialLocationType> GenerateSpecialLocations(int rowSize, int colSize, int numType1, int numType2, int numType3);
-    void GenerateFilesForModel(const std::string& baseName, int rowSize, int colSize, int numType1, int numType2, int numType3, int depth, int charge);
-    void GenerateXml(int rowSize, int colSize, const std::map<int, SpecialLocationType>& specialLocations, const std::string& xmlFilename);
+    virtual void GenerateFilesForModel(const std::map<int, SpecialLocationType>& specialLocations,
+                                                    const std::string& baseName, int rowSize, int colSize, int depth, int startingCharge, 
+                                                    const std::tuple<double, double, int, int> initialSetup); 
+    virtual void GenerateXml(int rowSize, int colSize, const std::map<int, SpecialLocationType>& specialLocations, const std::string& xmlFilename);
 
 
-private:
+    virtual ~warehouse_xml_generator();
+protected:
     int rowSize, colSize;
     int numType1, numType2, numType3;
     int depth;
@@ -39,8 +46,8 @@ private:
     std::mt19937 rng; // Mersenne Twister pseudo-random generator
     std::uniform_int_distribution<std::mt19937::result_type> dist; */
 
-    void AddParameters(tinyxml2::XMLNode* component, int numVariables, int numTransitions);
-    void AddLocation(tinyxml2::XMLNode* component, int id, int x1Min, int x1Max, int x2Min, int x2Max, SpecialLocationType specialType = SpecialLocationType::None);
+    virtual void AddParameters(tinyxml2::XMLNode* component, int numVariables, int numTransitions);
+    virtual void AddLocation(tinyxml2::XMLNode* component, int id, int x1Min, int x1Max, int x2Min, int x2Max, SpecialLocationType specialType = SpecialLocationType::None);
     void AddTransition(tinyxml2::XMLNode* component, int& transitionLabelCounter, int source, int target, int rowSize, int colSize, const std::map<int, SpecialLocationType>& specialLocations);
 };
 

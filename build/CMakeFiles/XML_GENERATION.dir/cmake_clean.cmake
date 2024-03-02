@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/XML_GENERATION.dir/src/userOptions.cpp.o.d"
   "CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o"
   "CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o.d"
+  "CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.o"
+  "CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.o.d"
   "XML_GENERATION"
   "XML_GENERATION.pdb"
 )

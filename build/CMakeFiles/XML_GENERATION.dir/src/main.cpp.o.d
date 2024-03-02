@@ -73,7 +73,7 @@ CMakeFiles/XML_GENERATION.dir/src/main.cpp.o: \
  /usr/include/string.h /usr/include/strings.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/assert.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -184,6 +184,7 @@ CMakeFiles/XML_GENERATION.dir/src/main.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/asif/XML_GENERATION/include/filegenerator.hpp \
  /home/asif/XML_GENERATION/include/warehouse_xml_generator.hpp \
+ /home/asif/XML_GENERATION/include/warehouse_xml_generator_deterministic.hpp \
  /home/asif/XML_GENERATION/include/userOptions.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \

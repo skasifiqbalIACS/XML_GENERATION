@@ -708,6 +708,30 @@ src/warehouse_xml_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/XML_GENERATION.dir/build.make CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.s
 .PHONY : src/warehouse_xml_generator.cpp.s
 
+src/warehouse_xml_generator_deterministic.o: src/warehouse_xml_generator_deterministic.cpp.o
+.PHONY : src/warehouse_xml_generator_deterministic.o
+
+# target to build an object file
+src/warehouse_xml_generator_deterministic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/XML_GENERATION.dir/build.make CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.o
+.PHONY : src/warehouse_xml_generator_deterministic.cpp.o
+
+src/warehouse_xml_generator_deterministic.i: src/warehouse_xml_generator_deterministic.cpp.i
+.PHONY : src/warehouse_xml_generator_deterministic.i
+
+# target to preprocess a source file
+src/warehouse_xml_generator_deterministic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/XML_GENERATION.dir/build.make CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.i
+.PHONY : src/warehouse_xml_generator_deterministic.cpp.i
+
+src/warehouse_xml_generator_deterministic.s: src/warehouse_xml_generator_deterministic.cpp.s
+.PHONY : src/warehouse_xml_generator_deterministic.s
+
+# target to generate assembly for a file
+src/warehouse_xml_generator_deterministic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/XML_GENERATION.dir/build.make CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.s
+.PHONY : src/warehouse_xml_generator_deterministic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -769,6 +793,9 @@ help:
 	@echo "... src/warehouse_xml_generator.o"
 	@echo "... src/warehouse_xml_generator.i"
 	@echo "... src/warehouse_xml_generator.s"
+	@echo "... src/warehouse_xml_generator_deterministic.o"
+	@echo "... src/warehouse_xml_generator_deterministic.i"
+	@echo "... src/warehouse_xml_generator_deterministic.s"
 .PHONY : help
 
 

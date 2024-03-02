@@ -128,12 +128,12 @@ lib/tinyxml2-master/clean: lib/tinyxml2-master/CMakeFiles/xmltest.dir/clean
 CMakeFiles/XML_GENERATION.dir/all: lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/XML_GENERATION.dir/build.make CMakeFiles/XML_GENERATION.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/XML_GENERATION.dir/build.make CMakeFiles/XML_GENERATION.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target XML_GENERATION"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target XML_GENERATION"
 .PHONY : CMakeFiles/XML_GENERATION.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/XML_GENERATION.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asif/XML_GENERATION/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asif/XML_GENERATION/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/XML_GENERATION.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/asif/XML_GENERATION/build/CMakeFiles 0
 .PHONY : CMakeFiles/XML_GENERATION.dir/rule
@@ -882,7 +882,7 @@ lib/tinyxml2-master/CMakeFiles/ContinuousSubmit.dir/clean:
 lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/build.make lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/build.make lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=8,9 "Built target tinyxml2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=9,10 "Built target tinyxml2"
 .PHONY : lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -908,7 +908,7 @@ lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/clean:
 lib/tinyxml2-master/CMakeFiles/xmltest.dir/all: lib/tinyxml2-master/CMakeFiles/tinyxml2.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/tinyxml2-master/CMakeFiles/xmltest.dir/build.make lib/tinyxml2-master/CMakeFiles/xmltest.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/tinyxml2-master/CMakeFiles/xmltest.dir/build.make lib/tinyxml2-master/CMakeFiles/xmltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=10,11 "Built target xmltest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=11,12 "Built target xmltest"
 .PHONY : lib/tinyxml2-master/CMakeFiles/xmltest.dir/all
 
 # Build rule for subdir invocation for target.

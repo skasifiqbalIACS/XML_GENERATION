@@ -217,7 +217,7 @@ CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
  /home/asif/XML_GENERATION/include/warehouse_xml_generator.hpp \
  /home/asif/XML_GENERATION/include/WarehouseAutomationPlantUMLGenerator.hpp \
  /home/asif/XML_GENERATION/include/warehouse_xml_generator.hpp

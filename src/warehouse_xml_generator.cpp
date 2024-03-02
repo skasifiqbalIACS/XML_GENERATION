@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <map>
 #include <string>
+#include <cmath>
 #include "tinyxml2.h"
 #include "warehouse_xml_generator.hpp"
 #include "WarehouseAutomationPlantUMLGenerator.hpp"
@@ -23,6 +24,9 @@ using namespace tinyxml2;
     Type4, // Fourth special location type 
 }; */
 
+warehouse_xml_generator::~warehouse_xml_generator(){
+    
+}
 
 void warehouse_xml_generator::AddParameters(tinyxml2::XMLNode* component, int numVariables, int numTransitions) {
     // x1, x2, c as parameters
@@ -238,6 +242,7 @@ void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::m
 
     XMLText* newline = doc.NewText("\n");
     component->InsertEndChild(newline);
+    newline = doc.NewText("\n\t ");
     component->InsertEndChild(newline);
 
     // Adds locations
@@ -252,7 +257,7 @@ void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::m
 
     newline = doc.NewText("\n");
     component->InsertEndChild(newline);
-    newline = doc.NewText("\n");
+    newline = doc.NewText("\n\t ");
     component->InsertEndChild(newline);
 
     // Add transitions between adjacent locations, including back edges
@@ -440,8 +445,45 @@ std::map<int, SpecialLocationType> warehouse_xml_generator::GenerateSpecialLocat
         std::cerr << "Unable to open file for writing." << std::endl;
     }
 } */
+std::tuple<double, double, int, int> warehouse_xml_generator::generateInitialSetup(const std::map<int, SpecialLocationType>& specialLocations, int rowSize, int colSize, int startingCharge) {
+    std::random_device rd;
+    std::mt19937 eng(rd());
+    std::uniform_real_distribution<> distr(0, 1);
+    std::vector<int> validLocations;
 
-void warehouse_xml_generator::generateCfgFile(const std::map<int, SpecialLocationType>& specialLocations, const std::string& filename, int rowSize, int colSize, int startingCharge) {
+    for (const auto& loc : specialLocations) {
+        if (loc.second != SpecialLocationType::Type1) {
+            validLocations.push_back(loc.first);
+        }
+    }
+
+    if (validLocations.empty()) {
+        throw std::runtime_error("No valid locations available.");
+    }
+
+    std::uniform_int_distribution<> distLoc(0, validLocations.size() - 1);
+    int initialLocation = validLocations[distLoc(eng)];
+    int initialRow = (initialLocation - 1) / colSize;
+    int initialCol = (initialLocation - 1) % colSize;
+
+    /* double x1Value = static_cast<int>((initialCol + distr(eng))*10) / 10.0;
+    double x2Value = static_cast<int>((initialRow + distr(eng))*10) / 10.0; */
+
+    double x1Value = initialCol + distr(eng);
+    double x2Value = initialRow + distr(eng);
+    x1Value = std::round(x1Value * 10) / 10.0;
+    x2Value = std::round(x2Value * 10) / 10.0;
+
+    // Find a forbidden location, ensuring it's not the same as the initial location
+    int forbiddenLocation;
+    do {
+        forbiddenLocation = validLocations[distLoc(eng)];
+    } while (forbiddenLocation == initialLocation);
+
+    return {x1Value, x2Value, initialLocation, forbiddenLocation};
+}
+
+/* void warehouse_xml_generator::generateCfgFile(const std::map<int, SpecialLocationType>& specialLocations, const std::string& filename, int rowSize, int colSize, int startingCharge) {
     // Use the <random> library for generating random numbers
     std::random_device rd; // Obtain a random number from hardware
     std::mt19937 eng(rd()); // Seed the generator
@@ -490,6 +532,30 @@ void warehouse_xml_generator::generateCfgFile(const std::map<int, SpecialLocatio
         std::cout << "CFG file generated successfully." << std::endl;
     } else {
         std::cerr << "Unable to open file for writing." << std::endl;
+    }
+} */
+
+void warehouse_xml_generator::generateCfgFile(const std::tuple<double, double, int, int>& initialSetup, const std::string& filename, int startingCharge) {
+    // Unpack the tuple
+    double x1Value, x2Value;
+    int initialLocation, forbiddenLocation;
+    std::tie(x1Value, x2Value, initialLocation, forbiddenLocation) = initialSetup;
+
+    std::string fullPath = "generated_models/" + filename;
+
+    std::ofstream cfgFile(fullPath);
+    if (cfgFile.is_open()) {
+        cfgFile << "# analysis options\n";
+        cfgFile << "system = \"warehouse_automation_agent\"\n";
+        cfgFile << "initially = \"x1==" << x1Value << " & x2==" << x2Value << " & c==" << startingCharge << " & loc()==loc" << initialLocation << "\"\n";
+        cfgFile << "forbidden = \"loc()==loc" << forbiddenLocation << "\"\n";
+        cfgFile << "iter-max = 50\n";
+        cfgFile << "rel-err = 1.0e-12\n";
+        cfgFile << "abs-err = 1.0e-13\n";
+        cfgFile.close();
+        std::cout << "CFG file generated successfully: " << fullPath << std::endl;
+    } else {
+        std::cerr << "Unable to open file for writing: " << fullPath << std::endl;
     }
 }
 
@@ -550,8 +616,9 @@ void warehouse_xml_generator::generateCfgFile(const std::map<int, SpecialLocatio
     }
 } */
 
-void warehouse_xml_generator::GenerateFilesForModel(const std::string& baseName, int rowSize, int colSize, int numType1, int numType2, int numType3,
-                                                    int depth, int startingCharge) {
+void warehouse_xml_generator::GenerateFilesForModel(const std::map<int, SpecialLocationType>& specialLocations,
+                                                    const std::string& baseName, int rowSize, int colSize, int depth, int startingCharge, 
+                                                    const std::tuple<double, double, int, int> initialSetup) {
     warehouse_xml_generator generator;
     // Step 0: Ensure the output directory exists
     std::string outputDir = "generated_models";
@@ -561,7 +628,7 @@ void warehouse_xml_generator::GenerateFilesForModel(const std::string& baseName,
     // srand(static_cast<unsigned int>(time(nullptr))); // Seeds random number generator
 
     // Step 1: Generate Special Locations
-    auto specialLocations = GenerateSpecialLocations(rowSize, colSize, numType1, numType2, numType3);
+    // auto specialLocations = GenerateSpecialLocations(rowSize, colSize, numType1, numType2, numType3);
 
     // Prepare file paths
     std::string xmlPath = baseName + ".xml";
@@ -570,8 +637,8 @@ void warehouse_xml_generator::GenerateFilesForModel(const std::string& baseName,
     // Generate the XML File
     GenerateXml(rowSize, colSize, specialLocations, xmlPath);
 
-    // Generate the CFG File
-    generateCfgFile(specialLocations, cfgPath, rowSize, colSize, startingCharge);
+    // Generate the CFG File with the tuple
+    generateCfgFile(initialSetup, cfgPath, startingCharge);
 
     std::cout << "XML and CFG files for " << baseName << " have been generated successfully in " << outputDir << std::endl;
     

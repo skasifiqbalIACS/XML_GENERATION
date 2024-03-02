@@ -68,10 +68,20 @@ public: */
         int generatedSatFiles = 0; // Counter for SAT files
         int attempt = 1;
 
+        auto specialLocations = baseXmlGenerator.GenerateSpecialLocations(rowSize, colSize, numType1, numType2, numType3);
+        std::tuple<double, double, int, int> initialSetup;
+
         while (generatedUnsatFiles < targetUnsatFiles || generatedSatFiles < targetSatFiles) {
             string baseName = "model_" + to_string(attempt++);
             
-            xmlGenerator.GenerateFilesForModel(baseName, rowSize, colSize, numType1, numType2, numType3, depth, startingCharge);
+            specialLocations = baseXmlGenerator.GenerateSpecialLocations(rowSize, colSize, numType1, numType2, numType3);
+            // baseXmlGenerator.GenerateFilesForModel(baseName, rowSize, colSize, numType1, numType2, numType3, depth, startingCharge);
+             initialSetup = baseXmlGenerator.generateInitialSetup(specialLocations, rowSize, colSize, startingCharge);
+             baseXmlGenerator.GenerateFilesForModel(specialLocations, baseName, rowSize, colSize, depth, startingCharge, initialSetup);
+
+             derivedXmlGenerator.GenerateFilesForModel(specialLocations, baseName, rowSize, colSize, depth, startingCharge, initialSetup);
+
+
 
             if (!cH_Replay(baseName)) {
                 if (generatedUnsatFiles < targetUnsatFiles) {
@@ -97,10 +107,14 @@ public: */
         string xmlPath = "generated_models/" + baseName + ".xml";
         string cfgPath = "generated_models/" + baseName + ".cfg";
         string pumlPath = "generated_models/" + baseName + ".puml";
+        string xmlPathBase = "generated_models/" + baseName + "_base.xml";
+        string cfgPathBase = "generated_models/" + baseName + "_base.cfg";
 
         remove(xmlPath.c_str());
         remove(cfgPath.c_str());
         remove(pumlPath.c_str());
+        remove(xmlPathBase.c_str());
+        remove(cfgPathBase.c_str());
         cout << "Extra file for " << baseName << ". Deleting files." << endl;
     }
 
