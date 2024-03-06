@@ -155,10 +155,10 @@ void warehouse_xml_generator::AddTransition(tinyxml2::XMLNode* component, int& t
     std::string guardCondition;
     if (isHorizontal) {
         // Horizontal transition
-        guardCondition = "x1==" + std::to_string(sourceCol + 1) + " & x2>=" + std::to_string(sourceRow) + " & x2<" + std::to_string(sourceRow + 1);
+        guardCondition = "x1==" + std::to_string(sourceCol + 1) + " & x2>=" + std::to_string(sourceRow) + " & x2<=" + std::to_string(sourceRow + 1);
     } else if (isVertical) {
         // Vertical transition
-        guardCondition = "x1>=" + std::to_string(sourceCol) + " & x1<" + std::to_string(sourceCol + 1) + " & x2==" + std::to_string(sourceRow + 1);
+        guardCondition = "x1>=" + std::to_string(sourceCol) + " & x1<=" + std::to_string(sourceCol + 1) + " & x2==" + std::to_string(sourceRow + 1);
     }
     
     // Transition from source to target
@@ -209,6 +209,7 @@ void warehouse_xml_generator::AddTransition(tinyxml2::XMLNode* component, int& t
     backTransition->InsertEndChild(backGuard);
 
     component->InsertEndChild(backTransition);
+    
 }
 
 void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::map<int, SpecialLocationType>& specialLocations, const std::string& xmlFilename) {
@@ -340,6 +341,7 @@ void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::m
                 }        
             }
         }
+    
     }
 
     // Save the XML document

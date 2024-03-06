@@ -210,6 +210,18 @@ void ModifiedWarehouseXmlGenerator::AddLocation(tinyxml2::XMLNode* component, in
     location->SetAttribute("id", std::to_string(id).c_str());
     location->SetAttribute("name", ("Loc" + std::to_string(id)).c_str());
 
+    auto* invariant = component->GetDocument()->NewElement("invariant");
+    // std::string invariantText = "x1>=" + std::to_string(x1Min) + " & x1<=" + std::to_string(x1Max) + 
+    //                             " & x2>=" + std::to_string(x2Min) + " & x2<=" + std::to_string(x2Max) + 
+    //                             " & c>=1";
+
+    std::string invariantText = "x1>=" + std::to_string(x2Min) + " & x1<=" + std::to_string(x2Max) + 
+                                " & x2>=" + std::to_string(x1Min) + " & x2<=" + std::to_string(x1Max) + 
+                                " & c>=0.1";
+
+    invariant->SetText(invariantText.c_str());
+    location->InsertEndChild(invariant);
+
     // Customizing flow for demonstration
     std::string flowText; // Custom flow for all locations
     switch (specialType) {
