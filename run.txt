@@ -1,10 +1,1 @@
-g++ -o grid_xml_generator grid_xml_generator.cpp
-
-
-./grid_xml_generator 
-
-
-g++ -o warehouse_xml_generator warehouse_xml_generator.cpp -L../tinyxml2-master -ltinyxml2
-
-g++ -o warehouse_xml_generator warehouse_xml_generator.cpp -I"home/asif/XML generation/tinyxml2-master/tinyxml2-master" -L"home/asif/XML generation/tinyxml2-master/tinyxml2-master" -ltinyxml2 -Wl,-rpath,../tinyxml2-master
-
+./XML_GENERATION --rowSize 5 --colSize 4 --numBarriers 5 --numOilSpills 2 --numChargingStations 1 --numUnsatModels 1 --depth 7 --startingCharge 3

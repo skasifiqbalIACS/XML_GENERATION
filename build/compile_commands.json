@@ -1,37 +1,37 @@
 [
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/WarehouseAutomationPlantUMLGenerator.cpp.o -c /home/asif/XML_GENERATION/src/WarehouseAutomationPlantUMLGenerator.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/WarehouseAutomationPlantUMLGenerator.cpp.o -c /home/asif/XML_GENERATION/src/WarehouseAutomationPlantUMLGenerator.cpp",
   "file": "/home/asif/XML_GENERATION/src/WarehouseAutomationPlantUMLGenerator.cpp"
 },
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/filegenerator.cpp.o -c /home/asif/XML_GENERATION/src/filegenerator.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/filegenerator.cpp.o -c /home/asif/XML_GENERATION/src/filegenerator.cpp",
   "file": "/home/asif/XML_GENERATION/src/filegenerator.cpp"
 },
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/main.cpp.o -c /home/asif/XML_GENERATION/src/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/main.cpp.o -c /home/asif/XML_GENERATION/src/main.cpp",
   "file": "/home/asif/XML_GENERATION/src/main.cpp"
 },
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/readCommandLine.cpp.o -c /home/asif/XML_GENERATION/src/readCommandLine.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/readCommandLine.cpp.o -c /home/asif/XML_GENERATION/src/readCommandLine.cpp",
   "file": "/home/asif/XML_GENERATION/src/readCommandLine.cpp"
 },
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/userOptions.cpp.o -c /home/asif/XML_GENERATION/src/userOptions.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/userOptions.cpp.o -c /home/asif/XML_GENERATION/src/userOptions.cpp",
   "file": "/home/asif/XML_GENERATION/src/userOptions.cpp"
 },
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o -c /home/asif/XML_GENERATION/src/warehouse_xml_generator.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o -c /home/asif/XML_GENERATION/src/warehouse_xml_generator.cpp",
   "file": "/home/asif/XML_GENERATION/src/warehouse_xml_generator.cpp"
 },
 {
   "directory": "/home/asif/XML_GENERATION/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.o -c /home/asif/XML_GENERATION/src/warehouse_xml_generator_deterministic.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DTINYXML2_DEBUG -D_FILE_OFFSET_BITS=64 -I/home/asif/XML_GENERATION/include -I/home/asif/XML_GENERATION/lib/BACH-5.5/include -I/home/asif/XML_GENERATION/lib/tinyxml2-master -g -std=gnu++17 -o CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.o -c /home/asif/XML_GENERATION/src/warehouse_xml_generator_deterministic.cpp",
   "file": "/home/asif/XML_GENERATION/src/warehouse_xml_generator_deterministic.cpp"
 },
 {

@@ -77,7 +77,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"define" : "BOOST_ALL_NO_LIB"
+					"define" : "BOOST_ATOMIC_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_ATOMIC_NO_LIB"
 				},
 				{
 					"backtrace" : 3,
@@ -85,7 +89,15 @@
 				},
 				{
 					"backtrace" : 3,
+					"define" : "BOOST_FILESYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 3,
 					"define" : "BOOST_PROGRAM_OPTIONS_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_PROGRAM_OPTIONS_NO_LIB"
 				},
 				{
 					"backtrace" : 2,
@@ -163,17 +175,21 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0",
+				"fragment" : "/usr/local/lib/libboost_filesystem.so.1.84.0",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0",
+				"fragment" : "/usr/local/lib/libboost_program_options.so.1.84.0",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
 				"fragment" : "../lib/BACH-5.5/lib/libcryptominisat5.so.5.6",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libboost_atomic.so.1.84.0",
 				"role" : "libraries"
 			}
 		],

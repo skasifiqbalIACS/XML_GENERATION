@@ -198,10 +198,10 @@ void warehouse_xml_generator::AddTransition(tinyxml2::XMLNode* component, int& t
     std::string backGuardCondition;
     if (isHorizontal) {
         // Horizontal back transition
-        backGuardCondition = "x1==" + std::to_string(targetCol) + " & x2>=" + std::to_string(targetRow) + " & x2<" + std::to_string(targetRow + 1);
+        backGuardCondition = "x1==" + std::to_string(targetCol) + " & x2>=" + std::to_string(targetRow) + " & x2<=" + std::to_string(targetRow + 1);
     } else if (isVertical) {
         // Vertical back transition
-        backGuardCondition = "x1>=" + std::to_string(targetCol) + " & x1<" + std::to_string(targetCol + 1) + " & x2==" + std::to_string(targetRow);
+        backGuardCondition = "x1>=" + std::to_string(targetCol) + " & x1<=" + std::to_string(targetCol + 1) + " & x2==" + std::to_string(targetRow);
     }
 
     XMLElement* backGuard = component->GetDocument()->NewElement("guard");
@@ -210,6 +210,46 @@ void warehouse_xml_generator::AddTransition(tinyxml2::XMLNode* component, int& t
 
     component->InsertEndChild(backTransition);
     
+}
+
+int warehouse_xml_generator::calculateTotalTransitions(const std::map<int, SpecialLocationType> &specialLocations, int rowSize, int colSize)
+{
+    int totalTransitions = 0;
+    for (int row = 0; row < rowSize; row++) {
+        for (int col = 0; col < colSize; col++) {
+            // ID calculation, adjusted for the description
+            int id = row * colSize + col + 1;
+
+            // Find the special type of the current cell
+            auto currentCellIt = specialLocations.find(id);
+            bool isCurrentCellType1 = currentCellIt != specialLocations.end() && currentCellIt->second == SpecialLocationType::Type1;
+
+            // Transition to the right neighbor if within bounds
+            if (col < colSize - 1) {
+                int rightNeighborId = id + 1;
+                auto rightNeighborIt = specialLocations.find(rightNeighborId);
+                bool isRightNeighborType1 = rightNeighborIt != specialLocations.end() && rightNeighborIt->second == SpecialLocationType::Type1;
+
+                if (!isCurrentCellType1 && !isRightNeighborType1) {
+                    totalTransitions+=2;
+                }       
+            }
+
+            // Transition to the top neighbor if within bounds
+            if (row < rowSize - 1) { // 'row > 0' because row 0 is the topmost row
+                int topNeighborId = id + colSize;
+                auto topNeighborIt = specialLocations.find(topNeighborId);
+                bool isTopNeighborType1 = topNeighborIt != specialLocations.end() && topNeighborIt->second == SpecialLocationType::Type1;
+
+                if (!isCurrentCellType1 && !isTopNeighborType1) {
+                    totalTransitions+=2;
+                }        
+            }
+        }
+    
+    }
+
+    return totalTransitions;
 }
 
 void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::map<int, SpecialLocationType>& specialLocations, const std::string& xmlFilename) {
@@ -236,15 +276,16 @@ void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::m
 
     // The total number of transitions is the sum of the transitions for each cell, excluding the last column and row
     // Each non-edge cell has two transitions (right and below) and two back edges    
-    int numTransitions = 4 * (rowSize * colSize - rowSize);
+    int numTransitions = calculateTotalTransitions(specialLocations, rowSize, colSize);
 
     // Adds parameters
     AddParameters(component, 3, numTransitions);
 
-    XMLText* newline = doc.NewText("\n");
+    auto* newline = doc.NewText("\n");
+    component->InsertFirstChild(newline);
     component->InsertEndChild(newline);
-    newline = doc.NewText("\n\t ");
-    component->InsertEndChild(newline);
+    XMLText* tabspace = doc.NewText("\t\t");
+    component->InsertEndChild(tabspace);
 
     // Adds locations
     for (int row = 0; row < rowSize; ++row) {
@@ -256,10 +297,9 @@ void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::m
         }
     }
 
-    newline = doc.NewText("\n");
     component->InsertEndChild(newline);
-    newline = doc.NewText("\n\t ");
     component->InsertEndChild(newline);
+    component->InsertEndChild(tabspace);
 
     // Add transitions between adjacent locations, including back edges
     /*for (int row = 0; row < gridSize; ++row) {
@@ -348,7 +388,6 @@ void warehouse_xml_generator::GenerateXml(int rowSize, int colSize, const std::m
     doc.SaveFile(fullXmlPath.c_str());
     std::cout << "Generated XML file: " << fullXmlPath << std::endl;
 }
-
 
 std::map<int, SpecialLocationType> warehouse_xml_generator::GenerateSpecialLocations(int rowSize, int colSize, int numType1, int numType2, int numType3) {
     std::map<int, SpecialLocationType> specialLocations;

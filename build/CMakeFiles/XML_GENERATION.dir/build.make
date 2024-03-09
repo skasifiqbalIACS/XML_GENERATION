@@ -189,9 +189,10 @@ XML_GENERATION: CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator.cpp.o
 XML_GENERATION: CMakeFiles/XML_GENERATION.dir/src/warehouse_xml_generator_deterministic.cpp.o
 XML_GENERATION: CMakeFiles/XML_GENERATION.dir/build.make
 XML_GENERATION: lib/tinyxml2-master/libtinyxml2.a
-XML_GENERATION: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
-XML_GENERATION: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
+XML_GENERATION: /usr/local/lib/libboost_filesystem.so.1.84.0
+XML_GENERATION: /usr/local/lib/libboost_program_options.so.1.84.0
 XML_GENERATION: ../lib/BACH-5.5/lib/libcryptominisat5.so.5.6
+XML_GENERATION: /usr/local/lib/libboost_atomic.so.1.84.0
 XML_GENERATION: CMakeFiles/XML_GENERATION.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asif/XML_GENERATION/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable XML_GENERATION"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/XML_GENERATION.dir/link.txt --verbose=$(VERBOSE)

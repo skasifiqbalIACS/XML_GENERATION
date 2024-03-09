@@ -68,6 +68,11 @@ public: */
         int generatedSatFiles = 0; // Counter for SAT files
         int attempt = 1;
 
+        std::string outputDir = "generated_models";
+        // Command to remove the directory and its contents
+        std::string removeCommand = "rm -rf " + outputDir;
+        system(removeCommand.c_str());
+
         auto specialLocations = baseXmlGenerator.GenerateSpecialLocations(rowSize, colSize, numType1, numType2, numType3);
         std::tuple<double, double, int, int> initialSetup;
 

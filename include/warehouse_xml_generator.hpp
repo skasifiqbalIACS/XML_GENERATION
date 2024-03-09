@@ -49,6 +49,7 @@ protected:
     virtual void AddParameters(tinyxml2::XMLNode* component, int numVariables, int numTransitions);
     virtual void AddLocation(tinyxml2::XMLNode* component, int id, int x1Min, int x1Max, int x2Min, int x2Max, SpecialLocationType specialType = SpecialLocationType::None);
     void AddTransition(tinyxml2::XMLNode* component, int& transitionLabelCounter, int source, int target, int rowSize, int colSize, const std::map<int, SpecialLocationType>& specialLocations);
+    int calculateTotalTransitions(const std::map<int, SpecialLocationType>& specialLocations, int rowSize, int colSize);
 };
 
 #endif // WAREHOUSE_SIMULATION_HPP

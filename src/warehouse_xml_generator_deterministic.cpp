@@ -65,13 +65,18 @@ void ModifiedWarehouseXmlGenerator::GenerateXml(int rowSize, int colSize, const 
 
         // AddParameters(component);
 
+        int numTransitions = calculateTotalTransitions(specialLocations, rowSize, colSize);
+
         // Adds parameters 
-        AddParameters(component, 4, 4 * (rowSize * colSize - rowSize)); // Assuming new parameter count and adjustment in numTransitions if needed
+        AddParameters(component, 4, numTransitions); // New parameter count and adjustment in numTransitions if needed
 
         auto* newline = doc.NewText("\n");
+        auto* tabspace = doc.NewText("\t\t");
         component->InsertEndChild(newline);
         newline = doc.NewText("\n");
         component->InsertEndChild(newline);
+        // component->InsertEndChild(tabspace);
+        
         // Adds locations with modified flows
         for (int row = 0; row < rowSize; ++row) {
             for (int col = 0; col < colSize; ++col) {
@@ -86,6 +91,7 @@ void ModifiedWarehouseXmlGenerator::GenerateXml(int rowSize, int colSize, const 
         component->InsertEndChild(newline);
         newline = doc.NewText("\n");
         component->InsertEndChild(newline);
+        component->InsertEndChild(tabspace);
 
         // Add transitions between adjacent locations, including back edges
         for (int row = 0; row < rowSize; row++) {
@@ -208,7 +214,7 @@ void ModifiedWarehouseXmlGenerator::AddLocation(tinyxml2::XMLNode* component, in
     // Example: Creating a location element with custom flow conditions
     auto* location = component->GetDocument()->NewElement("location");
     location->SetAttribute("id", std::to_string(id).c_str());
-    location->SetAttribute("name", ("Loc" + std::to_string(id)).c_str());
+    location->SetAttribute("name", ("loc" + std::to_string(id)).c_str());
 
     auto* invariant = component->GetDocument()->NewElement("invariant");
     // std::string invariantText = "x1>=" + std::to_string(x1Min) + " & x1<=" + std::to_string(x1Max) + 
@@ -227,15 +233,15 @@ void ModifiedWarehouseXmlGenerator::AddLocation(tinyxml2::XMLNode* component, in
     switch (specialType) {
         case SpecialLocationType::Type1:
             flowText = "x1'==z & x2'==z & c'==-1";
-            location->InsertEndChild(component->GetDocument()->NewComment("Barrier"));
+            // location->InsertEndChild(component->GetDocument()->NewComment("Barrier"));
             break;
         case SpecialLocationType::Type2:
             flowText = "x1'==z & x2'==z & c'==-2";
-            location->InsertEndChild(component->GetDocument()->NewComment("Oil Spill"));
+            // location->InsertEndChild(component->GetDocument()->NewComment("Oil Spill"));
             break;
         case SpecialLocationType::Type3:
             flowText = "x1'==z & x2'==z & c'==0";
-            location->InsertEndChild(component->GetDocument()->NewComment("Charging Location"));
+            // location->InsertEndChild(component->GetDocument()->NewComment("Charging Location"));
             break;
         default:
             flowText = "x1'==z & x2'==z & c'==-1";
